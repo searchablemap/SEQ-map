@@ -15,13 +15,13 @@ input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-rad
 button{padding:9px 11px;border:1px solid var(--line);background:white;border-radius:8px;cursor:pointer}.primary{background:var(--accent);color:white;border-color:var(--accent)}
 .checks{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px}.check{display:flex;gap:6px;align-items:flex-start;font-size:.79rem}.check input{width:auto;margin-top:2px}
 .summary{font-size:.88rem;color:var(--muted);margin:10px 0}.note{font-size:.76rem;color:var(--muted);line-height:1.35}
-.main{display:grid;grid-template-rows:minmax(330px,56%) minmax(0,44%);min-width:0}.mapwrap{position:relative;min-height:0}#map{width:100%;height:100%}
-.results{overflow:auto;border-top:1px solid var(--line);padding:10px 12px}.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:9px}
-.title{font-weight:700}.campus{color:var(--accent);font-size:.9rem;margin-top:2px}.meta{font-size:.84rem;color:var(--muted);margin-top:6px;line-height:1.45}
+.main{display:grid;grid-template-rows:minmax(330px,56%) minmax(0,44%);min-width:0;background:#ffffff}.mapwrap{position:relative;min-height:0}#map{width:100%;height:100%}
+.results{overflow:auto;border-top:1px solid var(--line);padding:12px;background:#ffffff;color:#18212f}.card{background:#ffffff;border:1px solid #cfd6df;border-radius:10px;padding:13px;margin-bottom:10px;color:#18212f}
+.title{font-weight:700}.campus{color:var(--accent);font-size:.9rem;margin-top:2px}.meta{font-size:.86rem;color:#344054;margin-top:7px;line-height:1.5}
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.chip{font-size:.72rem;padding:3px 6px;border-radius:999px;background:var(--soft);color:#24456b}.approx{background:#fff4d6;color:#704b00}.warn{background:#fff1f0;color:#8b1e1e}
 .links{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}.links a,.meta a,.section a{font-size:.82rem;color:var(--accent);text-decoration:none}
-.section{margin-top:10px;padding-top:9px;border-top:1px solid #edf0f4}.section ul{margin:6px 0 0 18px;padding:0;font-size:.82rem;line-height:1.45}
-details{margin-top:8px}summary{cursor:pointer;font-size:.82rem;color:var(--accent)}
+.section{margin-top:10px;padding-top:9px;border-top:1px solid #e4e7ec;color:#18212f}.section ul{margin:6px 0 0 18px;padding:0;font-size:.82rem;line-height:1.45}
+details{margin-top:9px;color:#18212f}summary{cursor:pointer;font-size:.84rem;font-weight:700;color:var(--accent)}
 .status{position:absolute;z-index:500;top:10px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.76rem;box-shadow:0 1px 4px rgba(0,0,0,.12)}
 @media(max-width:800px){.app{grid-template-columns:1fr;height:auto}.sidebar{border-right:0;border-bottom:1px solid var(--line)}.main{grid-template-rows:430px auto}.results{overflow:visible}}
 </style>
@@ -51,9 +51,9 @@ const els={search:document.getElementById('search'),year:document.getElementById
 function unique(v){return [...new Set(v.filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
 function addOptions(el,vals){unique(vals).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;el.appendChild(o)})}
 addOptions(els.area,schools.map(s=>s.area));addOptions(els.delivery,schools.flatMap(s=>s.delivery||[]));addOptions(els.type,schools.map(s=>s.type));
-const preferred=['QCE','QCIA','VET','Work Experience','Apprenticeships/Traineeships','University Pathway','TAFE Pathway','Employment Pathway','Literacy/Numeracy Support','Re-engagement Support','Mental Health Support','Autism-specialised','Online','Referral Required','Wellbeing','Homeschool Support','First Nations/Cultural Learning','Learning Difficulties Support'];
-const all=unique(schools.flatMap(s=>s.features||[])), featureList=[...preferred.filter(f=>all.includes(f)),...all.filter(f=>!preferred.includes(f))],featureChecks=document.getElementById('featureChecks');
-featureList.forEach(f=>{const lab=document.createElement('label');lab.className='check';const cb=document.createElement('input');cb.type='checkbox';cb.value=f;const sp=document.createElement('span');sp.textContent=f;lab.append(cb,sp);featureChecks.appendChild(lab);cb.addEventListener('change',render)});
+const featureList=['QCE','VET','QCIA','University Pathway','Work Experience','Apprenticeships/Traineeships'];
+const featureChecks=document.getElementById('featureChecks');
+featureList.forEach(f=>{const lab=document.createElement('label');lab.className='check';const cb=document.createElement('input');cb.type='checkbox';cb.value=f;const sp=document.createElement('span');sp.textContent=(f==='Apprenticeships/Traineeships'?'Apprenticeship/Traineeship':f);lab.append(cb,sp);featureChecks.appendChild(lab);cb.addEventListener('change',render)});
 function selectedFeatures(){return [...featureChecks.querySelectorAll('input:checked')].map(x=>x.value)}
 function yearText(s){if(s.minYear===null||s.maxYear===null)return '';const f=n=>n===0?'Prep':`Year ${n}`;return s.minYear===s.maxYear?f(s.minYear):`${f(s.minYear)}–${f(s.maxYear)}`}
 function ageText(s){if(s.minAge===null||s.minAge===undefined)return '';if(s.maxAge===null||s.maxAge===undefined)return `Age ${s.minAge}+`;return s.minAge===s.maxAge?`Age ${s.minAge}`:`Ages ${s.minAge}–${s.maxAge}`}
