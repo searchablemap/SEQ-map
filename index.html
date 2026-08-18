@@ -1,294 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEQ Alternative Education Finder</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <style>
-    :root{--bg:#f5f7fa;--panel:#fff;--text:#18212f;--muted:#667085;--line:#d8dee7;--accent:#1266d4;--warn:#8a5b00}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-    header{padding:16px 20px;background:var(--panel);border-bottom:1px solid var(--line)}
-    h1{font-size:1.35rem;margin:0 0 4px} header p{margin:0;color:var(--muted);font-size:.94rem}
-    .app{display:grid;grid-template-columns:310px minmax(0,1fr);height:calc(100vh - 80px)}
-    .sidebar{background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:16px}
-    .field{margin-bottom:13px}.field label{display:block;font-size:.88rem;font-weight:700;margin-bottom:5px}
-    input,select,button{font:inherit} input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:white}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    button{padding:9px 11px;border:1px solid var(--line);background:white;border-radius:8px;cursor:pointer}
-    button:hover{border-color:var(--accent)} .primary{background:var(--accent);color:white;border-color:var(--accent)}
-    .summary{font-size:.9rem;color:var(--muted);margin:10px 0}.note{font-size:.78rem;color:var(--muted);line-height:1.35}
-    .main{display:grid;grid-template-rows:minmax(330px,58%) minmax(0,42%);min-width:0}
-    #map{width:100%;height:100%;background:#e9edf3}
-    .results{overflow:auto;background:var(--bg);border-top:1px solid var(--line);padding:10px 12px}
-    .card{background:white;border:1px solid var(--line);border-radius:10px;padding:11px 12px;margin-bottom:8px}
-    .title{font-weight:700}.campus{color:var(--accent);font-size:.9rem;margin-top:2px}.meta{font-size:.84rem;color:var(--muted);margin-top:6px;line-height:1.45}
-    .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.chip{font-size:.72rem;padding:3px 6px;border-radius:999px;background:#eef4ff;color:#24456b}
-    .approx{background:#fff4d6;color:#704b00}.unmapped{background:#f1f3f5;color:#555}
-    .links{margin-top:7px;display:flex;gap:10px;flex-wrap:wrap}.links a{font-size:.82rem;color:var(--accent);text-decoration:none}.links a:hover{text-decoration:underline}
-    .status{position:absolute;z-index:500;top:10px;left:50%;transform:translateX(-50%);background:white;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.78rem;box-shadow:0 1px 4px rgba(0,0,0,.12);max-width:80%;text-align:center}
-    .mapwrap{position:relative;min-height:0}
-    @media(max-width:760px){.app{grid-template-columns:1fr;height:auto}.sidebar{border-right:0;border-bottom:1px solid var(--line)}.main{grid-template-rows:430px auto}.results{overflow:visible}.two{grid-template-columns:1fr 1fr}}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SEQ Alternative Education Finder</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--bg:#f5f7fa;--panel:#fff;--text:#18212f;--muted:#667085;--line:#d8dee7;--accent:#1266d4;--soft:#eef4ff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:16px 20px;background:var(--panel);border-bottom:1px solid var(--line)}h1{font-size:1.35rem;margin:0}
+.app{display:grid;grid-template-columns:330px minmax(0,1fr);height:calc(100vh - 58px)}
+.sidebar{background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:16px}.field{margin-bottom:13px}
+.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:5px}input,select,button{font:inherit}
+input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:white}.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+button{padding:9px 11px;border:1px solid var(--line);background:white;border-radius:8px;cursor:pointer}.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px}.check{display:flex;gap:6px;align-items:flex-start;font-size:.79rem}.check input{width:auto;margin-top:2px}
+.summary{font-size:.88rem;color:var(--muted);margin:10px 0}.note{font-size:.76rem;color:var(--muted);line-height:1.35}
+.main{display:grid;grid-template-rows:minmax(330px,56%) minmax(0,44%);min-width:0}.mapwrap{position:relative;min-height:0}#map{width:100%;height:100%}
+.results{overflow:auto;border-top:1px solid var(--line);padding:10px 12px}.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:9px}
+.title{font-weight:700}.campus{color:var(--accent);font-size:.9rem;margin-top:2px}.meta{font-size:.84rem;color:var(--muted);margin-top:6px;line-height:1.45}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.chip{font-size:.72rem;padding:3px 6px;border-radius:999px;background:var(--soft);color:#24456b}.approx{background:#fff4d6;color:#704b00}.warn{background:#fff1f0;color:#8b1e1e}
+.links{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}.links a,.meta a,.section a{font-size:.82rem;color:var(--accent);text-decoration:none}
+.section{margin-top:10px;padding-top:9px;border-top:1px solid #edf0f4}.section ul{margin:6px 0 0 18px;padding:0;font-size:.82rem;line-height:1.45}
+details{margin-top:8px}summary{cursor:pointer;font-size:.82rem;color:var(--accent)}
+.status{position:absolute;z-index:500;top:10px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.76rem;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+@media(max-width:800px){.app{grid-template-columns:1fr;height:auto}.sidebar{border-right:0;border-bottom:1px solid var(--line)}.main{grid-template-rows:430px auto}.results{overflow:visible}}
+</style>
 </head>
 <body>
-<header>
-  <h1>SEQ Alternative Education Finder</h1>
-  <p>Built from the “Alternative Education Programs &amp; Support – Updated 2025” PDF. One result per campus/location.</p>
-</header>
+<header><h1>SEQ Alternative Education Finder</h1></header>
 <div class="app">
-  <aside class="sidebar">
-    <div class="field">
-      <label for="search">Search school, campus or suburb</label>
-      <input id="search" placeholder="e.g. Logan, Arethusa, Robina">
-    </div>
-
-    <div class="field">
-      <label for="year">Year level</label>
-      <select id="year">
-        <option value="">Any year level</option>
-        <option value="0">Prep</option>
-        <option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option>
-        <option value="4">Year 4</option><option value="5">Year 5</option><option value="6">Year 6</option>
-        <option value="7">Year 7</option><option value="8">Year 8</option><option value="9">Year 9</option>
-        <option value="10">Year 10</option><option value="11">Year 11</option><option value="12">Year 12</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label for="age">Age</label>
-      <select id="age">
-        <option value="">Any age</option>
-        <option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option>
-        <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
-      </select>
-    </div>
-
-    <div class="field two">
-      <div>
-        <label for="area">Area</label>
-        <select id="area"><option value="">All areas</option></select>
-      </div>
-      <div>
-        <label for="gender">Gender</label>
-        <select id="gender"><option value="">Any</option></select>
-      </div>
-    </div>
-
-    <div class="field">
-      <label for="type">Program / school type</label>
-      <select id="type"><option value="">All types</option></select>
-    </div>
-
-    <div class="field">
-      <label for="delivery">Delivery</label>
-      <select id="delivery"><option value="">Any delivery</option></select>
-    </div>
-
-    <div class="two">
-      <button id="clear">Clear filters</button>
-      <button id="fit" class="primary">Fit visible pins</button>
-    </div>
-
-    <div id="summary" class="summary"></div>
-    <p class="note">
-      Pins are geocoded from the addresses in the PDF and cached in your browser. Exact-address locations load first.
-      A yellow “approximate” label means the PDF supplied only a suburb/campus name, not a street address.
-      Online/distance-only entries can still appear in the results list without a map pin.
-    </p>
-  </aside>
-
-  <section class="main">
-    <div class="mapwrap">
-      <div id="map"></div>
-      <div id="status" class="status">Preparing map…</div>
-    </div>
-    <div id="results" class="results"></div>
-  </section>
+<aside class="sidebar">
+<div class="field"><label for="search">Search school, campus, suburb or program</label><input id="search" placeholder="e.g. Logan, VET, autism, QCE"></div>
+<div class="field"><label for="year">Year level</label><select id="year"><option value="">Any year level</option><option value="0">Prep</option><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5</option><option value="6">Year 6</option><option value="7">Year 7</option><option value="8">Year 8</option><option value="9">Year 9</option><option value="10">Year 10</option><option value="11">Year 11</option><option value="12">Year 12</option></select></div>
+<div class="field"><label for="age">Age</label><select id="age"><option value="">Any age</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option></select></div>
+<div class="field two"><div><label for="area">Area</label><select id="area"><option value="">All areas</option></select></div><div><label for="delivery">Delivery</label><select id="delivery"><option value="">Any delivery</option></select></div></div>
+<div class="field"><label for="type">School / program type</label><select id="type"><option value="">All types</option></select></div>
+<div class="field"><label>Pathways & supports</label><div id="featureChecks" class="checks"></div></div>
+<div class="two"><button id="clear">Clear filters</button><button id="fit" class="primary">Fit visible pins</button></div>
+<div id="summary" class="summary"></div>
+<p class="note">Online and outreach options appear in the results list even when they do not have a physical map pin. Approximate locations are used only where a precise street address is unavailable.</p>
+</aside>
+<section class="main"><div class="mapwrap"><div id="map"></div><div id="status" class="status">Preparing map…</div></div><div id="results" class="results"></div></section>
 </div>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="schools.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="schools.js"></script>
 <script>
-const map = L.map('map').setView([-27.62,153.05], 9);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-  maxZoom:19, attribution:'&copy; OpenStreetMap contributors'
-}).addTo(map);
-
-const markerLayer=L.layerGroup().addTo(map);
-const markerByIndex=new Map();
-const coordsByIndex=new Map();
-const statusEl=document.getElementById('status');
-
-const els = {
-  search:document.getElementById('search'),
-  year:document.getElementById('year'),
-  age:document.getElementById('age'),
-  area:document.getElementById('area'),
-  gender:document.getElementById('gender'),
-  type:document.getElementById('type'),
-  delivery:document.getElementById('delivery'),
-  summary:document.getElementById('summary'),
-  results:document.getElementById('results')
-};
-
-function unique(values){return [...new Set(values.filter(Boolean))].sort((a,b)=>a.localeCompare(b));}
-function addOptions(el,values){unique(values).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;el.appendChild(o);});}
-addOptions(els.area,schools.map(s=>s.area));
-addOptions(els.gender,schools.map(s=>s.gender));
-addOptions(els.type,schools.map(s=>s.type));
-addOptions(els.delivery,schools.flatMap(s=>s.delivery||[]));
-
-function yearText(s){
-  if(s.minYear===null || s.maxYear===null) return 'Years: not stated in PDF';
-  const f=n=>n===0?'Prep':`Year ${n}`;
-  return s.minYear===s.maxYear?f(s.minYear):`${f(s.minYear)}–${f(s.maxYear)}`;
-}
-function ageText(s){
-  if(s.minAge===null || s.maxAge===null) return '';
-  return s.minAge===s.maxAge?`Age ${s.minAge}`:`Ages ${s.minAge}–${s.maxAge}`;
-}
-function matches(s){
-  const q=els.search.value.trim().toLowerCase();
-  const y=els.year.value===''?null:Number(els.year.value);
-  const a=els.age.value===''?null:Number(els.age.value);
-  const hay=[s.name,s.campus,s.address,s.area,s.type,s.notes].join(' ').toLowerCase();
-  if(q && !hay.includes(q)) return false;
-  if(y!==null && !(s.minYear!==null && s.maxYear!==null && y>=s.minYear && y<=s.maxYear)) return false;
-  if(a!==null && !(s.minAge!==null && s.maxAge!==null && a>=s.minAge && a<=s.maxAge)) return false;
-  if(els.area.value && s.area!==els.area.value) return false;
-  if(els.gender.value && s.gender!==els.gender.value) return false;
-  if(els.type.value && s.type!==els.type.value) return false;
-  if(els.delivery.value && !(s.delivery||[]).includes(els.delivery.value)) return false;
-  return true;
-}
-
-function mapsUrl(s){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.geocodeQuery||s.address||s.name+' '+s.campus);}
-function popupHtml(s){
-  return `<strong>${s.name}</strong>${s.campus?`<br>${s.campus}`:''}<br>
-    <small>${yearText(s)}${ageText(s)?' · '+ageText(s):''}<br>${s.type}<br>${s.address||'No physical address in PDF'}</small>`;
-}
-
-function render(){
-  const visibleIdx=[];
-  schools.forEach((s,i)=>{if(matches(s))visibleIdx.push(i);});
-  els.summary.textContent=`${visibleIdx.length} matching result${visibleIdx.length===1?'':'s'} · ${visibleIdx.filter(i=>coordsByIndex.has(i)).length} visible map pin${visibleIdx.filter(i=>coordsByIndex.has(i)).length===1?'':'s'}`;
-
-  markerLayer.clearLayers();
-  visibleIdx.forEach(i=>{
-    const marker=markerByIndex.get(i);
-    if(marker) marker.addTo(markerLayer);
-  });
-
-  els.results.innerHTML='';
-  visibleIdx.forEach(i=>{
-    const s=schools[i];
-    const card=document.createElement('div');card.className='card';
-    const badges=[
-      `<span class="chip">${s.type}</span>`,
-      `<span class="chip">${yearText(s)}</span>`,
-      ageText(s)?`<span class="chip">${ageText(s)}</span>`:'',
-      s.area?`<span class="chip">${s.area}</span>`:'',
-      s.gender!=='Not stated'?`<span class="chip">${s.gender}</span>`:'',
-      s.approximate?`<span class="chip approx">Approximate location</span>`:'',
-      s.mappable===false?`<span class="chip unmapped">No map pin</span>`:''
-    ].filter(Boolean).join('');
-    card.innerHTML=`<div class="title">${s.name}</div>
-      ${s.campus?`<div class="campus">${s.campus}</div>`:''}
-      <div class="meta">${s.address||'No physical address supplied in PDF'}<br>${s.phone?`Phone: ${s.phone}<br>`:''}${s.notes||''}</div>
-      <div class="chips">${badges}</div>
-      <div class="links">
-        ${s.website?`<a href="${s.website}" target="_blank" rel="noopener">Website ↗</a>`:''}
-        ${s.mappable!==false?`<a href="${mapsUrl(s)}" target="_blank" rel="noopener">Google Maps ↗</a>`:''}
-        <span style="font-size:.78rem;color:#777">PDF p.${s.sourcePage}</span>
-      </div>`;
-    if(coordsByIndex.has(i)){
-      card.style.cursor='pointer';
-      card.addEventListener('click',e=>{
-        if(e.target.tagName.toLowerCase()==='a')return;
-        const c=coordsByIndex.get(i);map.setView(c,15);markerByIndex.get(i).openPopup();
-      });
-    }
-    els.results.appendChild(card);
-  });
-}
-
-['search','year','age','area','gender','type','delivery'].forEach(id=>els[id].addEventListener('input',render));
-document.getElementById('clear').addEventListener('click',()=>{
-  Object.values(els).forEach(el=>{if(el && (el.tagName==='INPUT'||el.tagName==='SELECT'))el.value='';});
-  render();
-});
-document.getElementById('fit').addEventListener('click',()=>{
-  const coords=[];
-  schools.forEach((s,i)=>{if(matches(s)&&coordsByIndex.has(i))coords.push(coordsByIndex.get(i));});
-  if(coords.length)map.fitBounds(L.latLngBounds(coords),{padding:[25,25]});
-});
-
-function cacheKey(s){return 'seq-map-v2:'+s.geocodeQuery;}
-function getCached(s){
-  try{
-    const raw=localStorage.getItem(cacheKey(s));
-    if(!raw)return null;
-    const v=JSON.parse(raw); return [Number(v.lat),Number(v.lon)];
-  }catch(e){return null;}
-}
-function saveCached(s,c){
-  try{localStorage.setItem(cacheKey(s),JSON.stringify({lat:c[0],lon:c[1]}));}catch(e){}
-}
-function attachMarker(i,c){
-  coordsByIndex.set(i,c);
-  const m=L.marker(c).bindPopup(popupHtml(schools[i]));
-  markerByIndex.set(i,m);
-}
-async function geocodeOne(i){
-  const s=schools[i];
-  if(s.mappable===false || !s.geocodeQuery)return false;
-  const cached=getCached(s);
-  if(cached){attachMarker(i,cached);return true;}
-  async function query(q){
-    const u='https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=au&q='+encodeURIComponent(q);
-    const r=await fetch(u,{headers:{'Accept':'application/json'}});
-    if(!r.ok)throw new Error('geocode');
-    const d=await r.json(); return d.length?[Number(d[0].lat),Number(d[0].lon)]:null;
-  }
-  try{
-    let c=await query(s.geocodeQuery);
-    if(!c && s.fallbackQuery)c=await query(s.fallbackQuery);
-    if(c){saveCached(s,c);attachMarker(i,c);return true;}
-  }catch(e){}
-  return false;
-}
-function sleep(ms){return new Promise(r=>setTimeout(r,ms));}
-async function loadPins(){
-  const exact=[],approx=[];
-  schools.forEach((s,i)=>{
-    if(s.mappable===false||!s.geocodeQuery)return;
-    (s.approximate?approx:exact).push(i);
-  });
-  const queue=[...exact,...approx];
-  let done=0,found=0;
-  // Immediately load any cached coordinates.
-  for(const i of queue){
-    const c=getCached(schools[i]);
-    if(c){attachMarker(i,c);done++;found++;}
-  }
-  render();
-
-  for(const i of queue){
-    if(coordsByIndex.has(i))continue;
-    statusEl.textContent=`Loading map pins ${done+1}/${queue.length}… first visit may take about a minute.`;
-    const ok=await geocodeOne(i);done++;if(ok)found++;
-    render();
-    await sleep(1100);
-  }
-  statusEl.textContent=`Map ready: ${found} campus pins loaded. Locations without a source address remain in the list.`;
-  setTimeout(()=>statusEl.style.display='none',7000);
-  render();
-  const c=[];schools.forEach((s,i)=>{if(coordsByIndex.has(i))c.push(coordsByIndex.get(i));});
-  if(c.length)map.fitBounds(L.latLngBounds(c),{padding:[20,20]});
-}
-render();
-loadPins();
-</script>
-</body>
-</html>
+const map=L.map('map').setView([-27.62,153.05],9);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const markerLayer=L.layerGroup().addTo(map),markerByIndex=new Map(),coordsByIndex=new Map(),statusEl=document.getElementById('status');
+const els={search:document.getElementById('search'),year:document.getElementById('year'),age:document.getElementById('age'),area:document.getElementById('area'),delivery:document.getElementById('delivery'),type:document.getElementById('type'),summary:document.getElementById('summary'),results:document.getElementById('results')};
+function unique(v){return [...new Set(v.filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
+function addOptions(el,vals){unique(vals).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;el.appendChild(o)})}
+addOptions(els.area,schools.map(s=>s.area));addOptions(els.delivery,schools.flatMap(s=>s.delivery||[]));addOptions(els.type,schools.map(s=>s.type));
+const preferred=['QCE','QCIA','VET','Work Experience','Apprenticeships/Traineeships','University Pathway','TAFE Pathway','Employment Pathway','Literacy/Numeracy Support','Re-engagement Support','Mental Health Support','Autism-specialised','Online','Referral Required','Wellbeing','Homeschool Support','First Nations/Cultural Learning','Learning Difficulties Support'];
+const all=unique(schools.flatMap(s=>s.features||[])), featureList=[...preferred.filter(f=>all.includes(f)),...all.filter(f=>!preferred.includes(f))],featureChecks=document.getElementById('featureChecks');
+featureList.forEach(f=>{const lab=document.createElement('label');lab.className='check';const cb=document.createElement('input');cb.type='checkbox';cb.value=f;const sp=document.createElement('span');sp.textContent=f;lab.append(cb,sp);featureChecks.appendChild(lab);cb.addEventListener('change',render)});
+function selectedFeatures(){return [...featureChecks.querySelectorAll('input:checked')].map(x=>x.value)}
+function yearText(s){if(s.minYear===null||s.maxYear===null)return '';const f=n=>n===0?'Prep':`Year ${n}`;return s.minYear===s.maxYear?f(s.minYear):`${f(s.minYear)}–${f(s.maxYear)}`}
+function ageText(s){if(s.minAge===null||s.minAge===undefined)return '';if(s.maxAge===null||s.maxAge===undefined)return `Age ${s.minAge}+`;return s.minAge===s.maxAge?`Age ${s.minAge}`:`Ages ${s.minAge}–${s.maxAge}`}
+function ageMatches(s,a){if(a===null)return true;if(Array.isArray(s.ageRanges)&&s.ageRanges.length)return s.ageRanges.some(r=>a>=+r[0]&&a<=+r[1]);return s.minAge!=null&&(s.maxAge==null?a>=s.minAge:a>=s.minAge&&a<=s.maxAge)}
+function hay(s){return [s.name,s.campus,s.address,s.area,s.type,s.notes,s.warning,...(s.features||[]),...(s.programs||[]),...(s.details||[]),...(s.resources||[]).map(r=>r.label)].join(' ').toLowerCase()}
+function matches(s){const q=els.search.value.trim().toLowerCase(),y=els.year.value===''?null:+els.year.value,a=els.age.value===''?null:+els.age.value;if(q&&!hay(s).includes(q))return false;if(y!==null&&!(s.minYear!==null&&s.maxYear!==null&&y>=s.minYear&&y<=s.maxYear))return false;if(!ageMatches(s,a))return false;if(els.area.value&&s.area!==els.area.value)return false;if(els.delivery.value&&!(s.delivery||[]).includes(els.delivery.value))return false;if(els.type.value&&s.type!==els.type.value)return false;const fs=selectedFeatures();if(fs.length&&!fs.every(f=>(s.features||[]).includes(f)))return false;return true}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function mapsUrl(s){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.geocodeQuery||s.address||s.name+' '+(s.campus||''))}
+function popupHtml(s){return `<strong>${esc(s.name)}</strong>${s.campus?`<br>${esc(s.campus)}`:''}<br><small>${yearText(s)?esc(yearText(s))+'<br>':''}${ageText(s)?esc(ageText(s))+'<br>':''}${s.type?esc(s.type)+'<br>':''}${s.phone?'<strong>Phone:</strong> '+esc(s.phone)+'<br>':''}${s.email?'<strong>Email:</strong> <a href="mailto:'+esc(s.email)+'">'+esc(s.email)+'</a><br>':''}${s.address?esc(s.address)+'<br>':''}${s.website?'<a href="'+esc(s.website)+'" target="_blank" rel="noopener">Website ↗</a>':''}</small>`}
+function listHtml(items){return items?.length?`<ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+function resourcesHtml(rs){return rs?.length?`<ul>${rs.map(r=>`<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)} ↗</a></li>`).join('')}</ul>`:''}
+function feeHtml(f){if(!f)return '';const x=[];if(f.annualTuition)x.push(`2026 annual tuition: $${Number(f.annualTuition).toLocaleString()}`);if(f.applicationFee)x.push(`Application fee: $${f.applicationFee}`);if(f.confirmationFee)x.push(`Enrolment confirmation fee: $${f.confirmationFee}`);if(f.includes?.length)x.push(`Includes: ${f.includes.join(', ')}`);if(f.excludes?.length)x.push(`Additional costs may include: ${f.excludes.join(', ')}`);return listHtml(x)}
+function render(){const visible=[];schools.forEach((s,i)=>{if(matches(s))visible.push(i)});const pins=visible.filter(i=>coordsByIndex.has(i));els.summary.textContent=`${visible.length} matching result${visible.length===1?'':'s'} · ${pins.length} map pin${pins.length===1?'':'s'}`;markerLayer.clearLayers();visible.forEach(i=>{const m=markerByIndex.get(i);if(m)m.addTo(markerLayer)});els.results.innerHTML='';visible.forEach(i=>{const s=schools[i],card=document.createElement('article');card.className='card';const badges=[s.type?`<span class="chip">${esc(s.type)}</span>`:'',yearText(s)?`<span class="chip">${esc(yearText(s))}</span>`:'',ageText(s)?`<span class="chip">${esc(ageText(s))}</span>`:'',s.area?`<span class="chip">${esc(s.area)}</span>`:'',...(s.features||[]).slice(0,8).map(f=>`<span class="chip">${esc(f)}</span>`),s.approximate?'<span class="chip approx">Approximate location</span>':'',s.referralRequired?'<span class="chip">Referral required</span>':''].filter(Boolean).join('');card.innerHTML=`<div class="title">${esc(s.name)}</div>${s.campus?`<div class="campus">${esc(s.campus)}</div>`:''}${s.warning?`<div class="section"><span class="chip warn">⚠ ${esc(s.warning)}</span></div>`:''}<div class="meta">${s.address?esc(s.address)+'<br>':''}${s.phone?'<strong>Phone:</strong> '+esc(s.phone)+'<br>':''}${s.email?'<strong>Email:</strong> <a href="mailto:'+esc(s.email)+'">'+esc(s.email)+'</a><br>':''}${s.notes?esc(s.notes):''}</div><div class="chips">${badges}</div>${s.programs?.length?`<details><summary>Programs & pathways</summary><div class="section">${listHtml(s.programs)}</div></details>`:''}${s.details?.length?`<details><summary>More information</summary><div class="section">${listHtml(s.details)}</div></details>`:''}${s.fees?`<details><summary>Fees</summary><div class="section">${feeHtml(s.fees)}</div></details>`:''}${s.resources?.length?`<details><summary>Helpful links</summary><div class="section">${resourcesHtml(s.resources)}</div></details>`:''}<div class="links">${s.website?`<a href="${esc(s.website)}" target="_blank" rel="noopener">Website ↗</a>`:''}${s.email?`<a href="mailto:${esc(s.email)}">Email ↗</a>`:''}${s.mappable!==false?`<a href="${mapsUrl(s)}" target="_blank" rel="noopener">Google Maps ↗</a>`:''}</div>`;if(coordsByIndex.has(i)){card.addEventListener('click',e=>{if(['a','summary'].includes(e.target.tagName.toLowerCase()))return;const c=coordsByIndex.get(i);map.setView(c,15);markerByIndex.get(i).openPopup()})}els.results.appendChild(card)})}
+['search','year','age','area','delivery','type'].forEach(id=>els[id].addEventListener('input',render));
+document.getElementById('clear').addEventListener('click',()=>{[els.search,els.year,els.age,els.area,els.delivery,els.type].forEach(el=>el.value='');featureChecks.querySelectorAll('input').forEach(x=>x.checked=false);render()});
+document.getElementById('fit').addEventListener('click',()=>{const c=[];schools.forEach((s,i)=>{if(matches(s)&&coordsByIndex.has(i))c.push(coordsByIndex.get(i))});if(c.length)map.fitBounds(L.latLngBounds(c),{padding:[25,25]})});
+function cacheKey(s){return 'seq-map-v3:'+s.geocodeQuery}function getCached(s){try{const r=localStorage.getItem(cacheKey(s));if(!r)return null;const v=JSON.parse(r);return [+v.lat,+v.lon]}catch(e){return null}}function saveCached(s,c){try{localStorage.setItem(cacheKey(s),JSON.stringify({lat:c[0],lon:c[1]}))}catch(e){}}
+function attachMarker(i,c){coordsByIndex.set(i,c);markerByIndex.set(i,L.marker(c).bindPopup(popupHtml(schools[i])))}
+async function geocodeOne(i){const s=schools[i];if(s.mappable===false||!s.geocodeQuery)return false;const cached=getCached(s);if(cached){attachMarker(i,cached);return true}async function query(q){const u='https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=au&q='+encodeURIComponent(q);const r=await fetch(u,{headers:{Accept:'application/json'}});if(!r.ok)throw new Error('geocode');const d=await r.json();return d.length?[+d[0].lat,+d[0].lon]:null}try{let c=await query(s.geocodeQuery);if(!c&&s.fallbackQuery)c=await query(s.fallbackQuery);if(c){saveCached(s,c);attachMarker(i,c);return true}}catch(e){}return false}
+function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
+async function loadPins(){const q=[];schools.forEach((s,i)=>{if(s.mappable!==false&&s.geocodeQuery)q.push(i)});let done=0,found=0;for(const i of q){const c=getCached(schools[i]);if(c){attachMarker(i,c);done++;found++}}render();for(const i of q){if(coordsByIndex.has(i))continue;statusEl.textContent=`Loading map pins ${done+1}/${q.length}…`;const ok=await geocodeOne(i);done++;if(ok)found++;render();await sleep(1100)}statusEl.textContent=`Map ready: ${found} pins loaded.`;setTimeout(()=>statusEl.style.display='none',5000);const c=[];schools.forEach((s,i)=>{if(coordsByIndex.has(i))c.push(coordsByIndex.get(i))});if(c.length)map.fitBounds(L.latLngBounds(c),{padding:[20,20]})}
+render();loadPins();
+</script></body></html>

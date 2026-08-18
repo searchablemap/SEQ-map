@@ -21,7 +21,16 @@ const schools = [
     "notes": "Mental Health and Department of Education partnership; supports re-engagement with education.",
     "geocodeQuery": "Level 1, 55 Wembley Rd, Logan Central QLD",
     "fallbackQuery": "",
-    "shortName": "Logan Adolescent Day Program – Logan"
+    "shortName": "Logan Adolescent Day Program – Logan",
+    "email": "logan_adolescentdayprogram@health.qld.gov.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Yangah Adolescent Day Program",
@@ -45,16 +54,25 @@ const schools = [
     "notes": "Mental Health and Department of Education partnership; supports re-engagement with education.",
     "geocodeQuery": "Robina Hospital Bayberry Lane Robina QLD",
     "fallbackQuery": "",
-    "shortName": "Yangah Adolescent Day Program – Gold Coast"
+    "shortName": "Yangah Adolescent Day Program – Gold Coast",
+    "email": "",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Autism Queensland School",
     "campus": "Brighton Campus",
     "address": "136 North Rd, Brighton QLD",
     "area": "Brisbane",
-    "type": "Specialist school",
-    "minYear": null,
-    "maxYear": null,
+    "type": "Autism specialised school",
+    "minYear": 0,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -67,19 +85,33 @@ const schools = [
     "sourcePage": 3,
     "approximate": false,
     "mappable": true,
-    "notes": "AQ School offers full-time, part-time and distance education. PDF does not state year levels for these physical campuses.",
+    "notes": "Autism specialised school supporting Prep–Year 12 autistic students with small classes, a consistent learning environment and personalised support.",
     "geocodeQuery": "136 North Rd, Brighton QLD",
     "fallbackQuery": "",
-    "shortName": "Autism Queensland School – Brighton Campus"
+    "shortName": "Autism Queensland School – Brighton Campus",
+    "email": "brighton@autismqld.com.au",
+    "features": [
+      "Autism-specialised",
+      "Small Classes",
+      "Personalised Support",
+      "Consistent Learning Environment"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Autism Queensland School",
     "campus": "Sunnybank Hills Campus",
     "address": "437 Hellawell Road, Sunnybank Hills QLD",
     "area": "Brisbane",
-    "type": "Specialist school",
-    "minYear": null,
-    "maxYear": null,
+    "type": "Autism specialised school",
+    "minYear": 0,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -92,19 +124,33 @@ const schools = [
     "sourcePage": 3,
     "approximate": false,
     "mappable": true,
-    "notes": "AQ School offers full-time, part-time and distance education. PDF does not state year levels for these physical campuses.",
+    "notes": "Autism specialised school supporting Prep–Year 12 autistic students with small classes, a consistent learning environment and personalised support.",
     "geocodeQuery": "437 Hellawell Road, Sunnybank Hills QLD",
     "fallbackQuery": "",
-    "shortName": "Autism Queensland School – Sunnybank Hills Campus"
+    "shortName": "Autism Queensland School – Sunnybank Hills Campus",
+    "email": "sunnybankschool@autismqld.com.au",
+    "features": [
+      "Autism-specialised",
+      "Small Classes",
+      "Personalised Support",
+      "Consistent Learning Environment"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Autism Queensland School",
     "campus": "Brightwater Campus",
     "address": "18 Freshwater St, Mountain Creek QLD",
     "area": "Sunshine Coast",
-    "type": "Specialist school",
-    "minYear": null,
-    "maxYear": null,
+    "type": "Autism specialised school",
+    "minYear": 0,
+    "maxYear": 10,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -117,10 +163,24 @@ const schools = [
     "sourcePage": 3,
     "approximate": false,
     "mappable": true,
-    "notes": "AQ School offers full-time, part-time and distance education. PDF does not state year levels for these physical campuses.",
+    "notes": "Autism specialised school supporting Prep–Year 10 autistic students with small classes, a consistent learning environment and personalised support.",
     "geocodeQuery": "18 Freshwater St, Mountain Creek QLD",
     "fallbackQuery": "",
-    "shortName": "Autism Queensland School – Brightwater Campus"
+    "shortName": "Autism Queensland School – Brightwater Campus",
+    "email": "css@autismqld.com.au",
+    "features": [
+      "Autism-specialised",
+      "Small Classes",
+      "Personalised Support",
+      "Consistent Learning Environment"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Autism Queensland School",
@@ -144,7 +204,16 @@ const schools = [
     "notes": "PDF states limited vacancies in Years 3–6 for the 2024 school year and priority for remote/regional students.",
     "geocodeQuery": "",
     "fallbackQuery": "",
-    "shortName": "Autism Queensland School – Distance Education"
+    "shortName": "Autism Queensland School – Distance Education",
+    "email": "css@autismqld.com.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arcadia College",
@@ -152,29 +221,59 @@ const schools = [
     "address": "12 Centreline Place, Robina QLD",
     "area": "Gold Coast",
     "type": "Special Assistance School",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 7,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Co-educational",
     "phone": "07 5655 1800",
     "website": "https://arcadia.qld.edu.au",
     "delivery": [
-      "In person",
-      "Distance education"
+      "In person"
     ],
     "sourcePage": 4,
     "approximate": false,
     "mappable": true,
-    "notes": "Co-educational special assistance secondary school. Distance Education is Years 8–12; PDF does not state a year range for the in-person campus.",
+    "notes": "Years 7–12 special assistance secondary school with targeted literacy/numeracy intervention, individual SET planning, QCE pathways, VET/work experience and post-school pathway support.",
     "geocodeQuery": "12 Centreline Place, Robina QLD",
     "fallbackQuery": "",
-    "shortName": "Arcadia College – Robina"
+    "shortName": "Arcadia College – Robina",
+    "email": "enrolments@arcadia.qld.edu.au",
+    "features": [
+      "Special Assistance School",
+      "Literacy/Numeracy Support",
+      "QCE",
+      "VET",
+      "Work Experience",
+      "University Pathway",
+      "Career Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Daily targeted Literacy and Numeracy intervention",
+      "Corrective Reading",
+      "MacqLit Reading Intervention",
+      "Matific, Mathletics and Mathspace",
+      "Junior Elementary Plus Maths Mastery",
+      "Education Perfect",
+      "SmartLab diagnostic testing and tutorials",
+      "CARS & STARS / CAMS & STAMS",
+      "1:1 specialist Teacher Aide support",
+      "Senior pathways: Arts, University, Work Ready and Individual",
+      "TAFE/VET pathways from Year 10",
+      "UniStart for Schools with Southern Cross University"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Deception Bay",
-    "address": "Deception Bay, QLD — exact street address not provided in PDF",
+    "address": "Deception Bay, QLD",
     "area": "Moreton Bay",
     "type": "Alternative education",
     "minYear": 7,
@@ -190,15 +289,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Deception Bay QLD",
     "fallbackQuery": "Deception Bay QLD",
-    "shortName": "Arethusa College – Deception Bay"
+    "shortName": "Arethusa College – Deception Bay",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Spring Hill",
-    "address": "Spring Hill, QLD — exact street address not provided in PDF",
+    "address": "Spring Hill, QLD",
     "area": "Brisbane",
     "type": "Alternative education",
     "minYear": 7,
@@ -214,15 +339,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Spring Hill QLD",
     "fallbackQuery": "Spring Hill QLD",
-    "shortName": "Arethusa College – Spring Hill"
+    "shortName": "Arethusa College – Spring Hill",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "West End (Montague Road)",
-    "address": "West End (Montague Road), QLD — exact street address not provided in PDF",
+    "address": "West End (Montague Road), QLD",
     "area": "Brisbane",
     "type": "Alternative education",
     "minYear": 7,
@@ -238,15 +389,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Montague Road West End QLD",
     "fallbackQuery": "West End QLD",
-    "shortName": "Arethusa College – West End (Montague Road)"
+    "shortName": "Arethusa College – West End (Montague Road)",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Forest Lake",
-    "address": "Forest Lake, QLD — exact street address not provided in PDF",
+    "address": "Forest Lake, QLD",
     "area": "Brisbane",
     "type": "Alternative education",
     "minYear": 7,
@@ -262,15 +439,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Forest Lake QLD",
     "fallbackQuery": "Forest Lake QLD",
-    "shortName": "Arethusa College – Forest Lake"
+    "shortName": "Arethusa College – Forest Lake",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Maroochydore",
-    "address": "Maroochydore, QLD — exact street address not provided in PDF",
+    "address": "Maroochydore, QLD",
     "area": "Sunshine Coast",
     "type": "Alternative education",
     "minYear": 7,
@@ -286,15 +489,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Maroochydore QLD",
     "fallbackQuery": "Maroochydore QLD",
-    "shortName": "Arethusa College – Maroochydore"
+    "shortName": "Arethusa College – Maroochydore",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Windsor",
-    "address": "Windsor, QLD — exact street address not provided in PDF",
+    "address": "Windsor, QLD",
     "area": "Brisbane",
     "type": "Alternative education",
     "minYear": 7,
@@ -310,15 +539,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Windsor QLD",
     "fallbackQuery": "Windsor QLD",
-    "shortName": "Arethusa College – Windsor"
+    "shortName": "Arethusa College – Windsor",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Caboolture",
-    "address": "Caboolture, QLD — exact street address not provided in PDF",
+    "address": "Caboolture, QLD",
     "area": "Moreton Bay",
     "type": "Alternative education",
     "minYear": 7,
@@ -334,15 +589,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Caboolture QLD",
     "fallbackQuery": "Caboolture QLD",
-    "shortName": "Arethusa College – Caboolture"
+    "shortName": "Arethusa College – Caboolture",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Ipswich",
-    "address": "Ipswich, QLD — exact street address not provided in PDF",
+    "address": "Ipswich, QLD",
     "area": "Ipswich",
     "type": "Alternative education",
     "minYear": 7,
@@ -358,15 +639,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Ipswich QLD",
     "fallbackQuery": "Ipswich QLD",
-    "shortName": "Arethusa College – Ipswich"
+    "shortName": "Arethusa College – Ipswich",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Springwood",
-    "address": "Springwood, QLD — exact street address not provided in PDF",
+    "address": "Springwood, QLD",
     "area": "Logan",
     "type": "Alternative education",
     "minYear": 7,
@@ -382,15 +689,41 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Springwood QLD",
     "fallbackQuery": "Springwood QLD",
-    "shortName": "Arethusa College – Springwood"
+    "shortName": "Arethusa College – Springwood",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
     "campus": "Berrinba",
-    "address": "Berrinba, QLD — exact street address not provided in PDF",
+    "address": "Berrinba, QLD",
     "area": "Logan",
     "type": "Alternative education",
     "minYear": 7,
@@ -406,10 +739,36 @@ const schools = [
     "sourcePage": 5,
     "approximate": true,
     "mappable": true,
-    "notes": "Alternative educational and vocational pathways for Years 7–12.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "Arethusa College Berrinba QLD",
     "fallbackQuery": "Berrinba QLD",
-    "shortName": "Arethusa College – Berrinba"
+    "shortName": "Arethusa College – Berrinba",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Arethusa College",
@@ -430,10 +789,36 @@ const schools = [
     "sourcePage": 5,
     "approximate": false,
     "mappable": false,
-    "notes": "Listed in the PDF alongside Arethusa campuses; no physical address is provided.",
+    "notes": "Years 7–12 alternative education and vocational pathways with career planning, VET, work experience, school-based traineeships/apprenticeships, QCE and eligible QCIA pathways.",
     "geocodeQuery": "",
     "fallbackQuery": "",
-    "shortName": "Arethusa College – Anywhere Learning Team"
+    "shortName": "Arethusa College – Anywhere Learning Team",
+    "email": "admin@arethusa.qld.edu.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Career advice and goal setting",
+      "Work experience and vocational placement",
+      "VET certificates through Arethusa RTO 46226 and external providers",
+      "School-based traineeships and apprenticeships",
+      "QCE curriculum/vocational pathway",
+      "Independent Project pathway",
+      "QCIA pathway for eligible students"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -454,10 +839,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "Level 2, 410 Ann St, Brisbane QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Brisbane City"
+    "shortName": "The BUSY School – Brisbane City",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -478,10 +891,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "32 Enterprise St, Cleveland QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Cleveland"
+    "shortName": "The BUSY School – Cleveland",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -502,10 +943,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "5 Scott St, Coolangatta QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Coolangatta"
+    "shortName": "The BUSY School – Coolangatta",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -526,10 +995,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "62 East St, Ipswich QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Ipswich"
+    "shortName": "The BUSY School – Ipswich",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -550,10 +1047,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "460-492 Beaudesert Rd, Salisbury QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Salisbury"
+    "shortName": "The BUSY School – Salisbury",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -574,10 +1099,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "37-43 Commercial Drive, Shailer Park QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Shailer Park"
+    "shortName": "The BUSY School – Shailer Park",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -598,10 +1151,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "137-139 Nerang St, Southport QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Southport Girls+"
+    "shortName": "The BUSY School – Southport Girls+",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The BUSY School",
@@ -622,10 +1203,38 @@ const schools = [
     "sourcePage": 6,
     "approximate": false,
     "mappable": true,
-    "notes": "Alternative Years 11–12 special assistance school; career, vocational or tertiary support and work-readiness skills.",
+    "notes": "Years 11–12 Special Assistance School supporting young people who have disengaged or are at risk of disengaging. Individualised senior pathways can include QCE or QCIA, VET, work experience and employment pathways.",
     "geocodeQuery": "219 Gympie Road, Strathpine QLD",
     "fallbackQuery": "",
-    "shortName": "The BUSY School – Strathpine"
+    "shortName": "The BUSY School – Strathpine",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "Special Assistance School",
+      "QCE",
+      "QCIA",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Career Planning",
+      "SET Planning",
+      "Employment Pathway"
+    ],
+    "programs": [
+      "Essential English",
+      "Essential Mathematics",
+      "Social & Community Studies",
+      "Individual SET Plan and Individual Learning Plan",
+      "VET electives and qualifications",
+      "School-based apprenticeship or traineeship",
+      "Work experience and structured work placements",
+      "BUSY School to Work / employability skills"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Carbrook Animal Assisted Learning Centre",
@@ -646,10 +1255,35 @@ const schools = [
     "sourcePage": 7,
     "approximate": false,
     "mappable": true,
-    "notes": "Independent Special Assistance School for Years 7–12; incorporates animal-assisted learning.",
+    "notes": "Christian Independent Special Assistance School for Years 7–12 supporting students disengaged from mainstream schooling, including students affected by social/emotional difficulties, disability and complex trauma. Animal-assisted learning and individualised education are central to the program.",
     "geocodeQuery": "597-605 Beenleigh Redland Bay Road, Carbrook QLD",
     "fallbackQuery": "",
-    "shortName": "Carbrook Animal Assisted Learning Centre – Carbrook"
+    "shortName": "Carbrook Animal Assisted Learning Centre – Carbrook",
+    "email": "admin@carbrookcentre.qld.edu.au",
+    "features": [
+      "Special Assistance School",
+      "Animal-assisted Learning",
+      "QCE",
+      "QCIA",
+      "VET",
+      "SET Planning",
+      "Literacy/Numeracy Support",
+      "Trauma-informed Support",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Junior Program Years 7–10: functional literacy and numeracy",
+      "Project-based inquiry and integrated Australian Curriculum learning",
+      "Senior Program Years 11–12: Short Courses, Applied Subjects and VET",
+      "Individual SET planning",
+      "QCE and QCIA pathways"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Carinity Education Southside",
@@ -673,18 +1307,27 @@ const schools = [
     "notes": "Girls program for Years 7–10 and Years 11–12. PDF also notes Carinity campuses in other Queensland cities without addresses.",
     "geocodeQuery": "153 Lister St, Sunnybank QLD",
     "fallbackQuery": "",
-    "shortName": "Carinity Education Southside – Sunnybank"
+    "shortName": "Carinity Education Southside – Sunnybank",
+    "email": "southside@carinity.qld.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Clear Skies Project",
     "campus": "Coolangatta",
     "address": "30a Griffith Street, Coolangatta QLD 4225",
     "area": "Gold Coast",
-    "type": "Youth re-engagement program",
+    "type": "Student enrichment / wellbeing program",
     "minYear": null,
     "maxYear": null,
-    "minAge": null,
-    "maxAge": null,
+    "minAge": 7,
+    "maxAge": 17,
     "gender": "Not stated",
     "phone": "0426 728 820",
     "website": "https://theclearskiesproject.com/",
@@ -694,10 +1337,49 @@ const schools = [
     "sourcePage": 8,
     "approximate": false,
     "mappable": true,
-    "notes": "Supports disengaged young people to re-engage or transition to work/training; 6–7 spots per program.",
+    "notes": "Age-specific social enrichment programs focused on emotional health, wellbeing, whole-person learning, connection, belonging and flexible group experiences.",
     "geocodeQuery": "30a Griffith Street, Coolangatta QLD 4225",
     "fallbackQuery": "",
-    "shortName": "The Clear Skies Project – Coolangatta"
+    "shortName": "The Clear Skies Project – Coolangatta",
+    "email": "clearskiesproject222@gmail.com",
+    "features": [
+      "Wellbeing",
+      "Social/Emotional Skills",
+      "Small Group",
+      "Flexible Program",
+      "Re-engagement Support"
+    ],
+    "programs": [
+      "Monday Magic — ages 7–12, Monday 10am–2pm",
+      "Art Connections — ages 7–12, Monday 2–3:30pm",
+      "Tuesday Tribe Time — ages 14–17, Tuesday 10am–2pm",
+      "Art Expression — ages 14–17, Tuesday 2:30–4pm",
+      "Friday Vibes Crew — ages 12–14, Friday 10am–2pm",
+      "Grease Monkeys — ages 12–17, Friday 2:30–4pm"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [
+      [
+        7,
+        12
+      ],
+      [
+        14,
+        17
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        12,
+        17
+      ]
+    ],
+    "referralRequired": false
   },
   {
     "name": "Eagleby Learning Centre",
@@ -705,8 +1387,8 @@ const schools = [
     "address": "161 Herses Road, Eagleby QLD",
     "area": "Logan",
     "type": "Flexible learning centre",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -718,10 +1400,44 @@ const schools = [
     "sourcePage": 9,
     "approximate": false,
     "mappable": true,
-    "notes": "Education Queensland facility offering education and training programs to school-age and mature-age students.",
+    "notes": "South East Region Learning Centre campus supporting Years 10–12 with re-engagement, modified Year 10, senior subjects, VET and university pathway options.",
     "geocodeQuery": "161 Herses Road, Eagleby QLD",
     "fallbackQuery": "",
-    "shortName": "Eagleby Learning Centre – Eagleby Learning Campus"
+    "shortName": "Eagleby Learning Centre – Eagleby Learning Campus",
+    "email": "",
+    "features": [
+      "Re-engagement Support",
+      "Mental Health Support",
+      "Modified Year 10",
+      "VET",
+      "University Pathway",
+      "Literacy/Numeracy Support",
+      "Study Hub",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "First Steps: intensive structured re-engagement for students out of school due to mental health challenges; Guidance Officer-led socio-emotional learning",
+      "Kick Start: short-term individualised re-entry program for significantly disengaged students",
+      "XTRA10: modified Year 10 with functional literacy, numeracy and personal capabilities",
+      "Year 10 Readiness: Maths, English and Science",
+      "Years 11–12: Essential English, Essential Maths plus elective/certificate options",
+      "UniStart for Schools with Southern Cross University",
+      "Science in Practice",
+      "Certificate III Visual Arts",
+      "Certificate III Business",
+      "Certificate II Applied Digital Technologies + Tourism",
+      "Career Pathways dual course",
+      "Certificate I Skills for Work & Vocational Pathways",
+      "Junior and Senior Study Hub",
+      "Certificate II Engineering Pathways",
+      "Certificate II Construction"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Eagleby Learning Centre",
@@ -729,8 +1445,8 @@ const schools = [
     "address": "Lower Level M1 Building, 120 Siganto Drive, Helensvale QLD",
     "area": "Gold Coast",
     "type": "Flexible learning centre",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -742,10 +1458,42 @@ const schools = [
     "sourcePage": 9,
     "approximate": false,
     "mappable": true,
-    "notes": "Education Queensland facility offering education and training programs to school-age and mature-age students.",
+    "notes": "South East Region Learning Centre campus supporting Years 10–12 with re-engagement, modified Year 10, senior subjects, VET and university pathway options.",
     "geocodeQuery": "Lower Level M1 Building, 120 Siganto Drive, Helensvale QLD",
     "fallbackQuery": "",
-    "shortName": "Eagleby Learning Centre – Helensvale Learning Campus"
+    "shortName": "Eagleby Learning Centre – Helensvale Learning Campus",
+    "email": "",
+    "features": [
+      "Re-engagement Support",
+      "Mental Health Support",
+      "Modified Year 10",
+      "VET",
+      "University Pathway",
+      "Literacy/Numeracy Support",
+      "Study Hub",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "First Steps: intensive structured re-engagement for students out of school due to mental health challenges; Guidance Officer-led socio-emotional learning",
+      "Kick Start: short-term individualised re-entry program for significantly disengaged students",
+      "XTRA10: modified Year 10 with functional literacy, numeracy and personal capabilities",
+      "Year 10 Readiness: Maths, English and Science",
+      "Years 11–12: Essential English, Essential Maths plus elective/certificate options",
+      "UniStart for Schools with Southern Cross University",
+      "Science in Practice",
+      "Certificate III Visual Arts",
+      "Certificate III Business",
+      "Certificate II Applied Digital Technologies + Tourism",
+      "Career Pathways dual course",
+      "Certificate I Skills for Work & Vocational Pathways",
+      "Junior and Senior Study Hub"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Eagleby Learning Centre",
@@ -753,8 +1501,8 @@ const schools = [
     "address": "Ground floor, 183 Varsity Parade, Varsity Lakes QLD",
     "area": "Gold Coast",
     "type": "Flexible learning centre",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -766,58 +1514,139 @@ const schools = [
     "sourcePage": 9,
     "approximate": false,
     "mappable": true,
-    "notes": "Education Queensland facility offering education and training programs to school-age and mature-age students.",
+    "notes": "South East Region Learning Centre campus supporting Years 10–12 with re-engagement, modified Year 10, senior subjects, VET and university pathway options.",
     "geocodeQuery": "Ground floor, 183 Varsity Parade, Varsity Lakes QLD",
     "fallbackQuery": "",
-    "shortName": "Eagleby Learning Centre – Varsity Lakes Learning Campus"
+    "shortName": "Eagleby Learning Centre – Varsity Lakes Learning Campus",
+    "email": "",
+    "features": [
+      "Re-engagement Support",
+      "Mental Health Support",
+      "Modified Year 10",
+      "VET",
+      "University Pathway",
+      "Literacy/Numeracy Support",
+      "Study Hub",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "First Steps: intensive structured re-engagement for students out of school due to mental health challenges; Guidance Officer-led socio-emotional learning",
+      "Kick Start: short-term individualised re-entry program for significantly disengaged students",
+      "XTRA10: modified Year 10 with functional literacy, numeracy and personal capabilities",
+      "Year 10 Readiness: Maths, English and Science",
+      "Years 11–12: Essential English, Essential Maths plus elective/certificate options",
+      "UniStart for Schools with Southern Cross University",
+      "Science in Practice",
+      "Certificate III Visual Arts",
+      "Certificate III Business",
+      "Certificate II Applied Digital Technologies + Tourism",
+      "Career Pathways dual course",
+      "Certificate I Skills for Work & Vocational Pathways",
+      "Junior and Senior Study Hub"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
-    "name": "Edmund Rice Flexible Learning Centres",
-    "campus": "Southport Flexible Learning Centre",
-    "address": "2 Nakina St, Southport QLD",
+    "name": "Southport Flexible Learning Centre",
+    "campus": "Southport",
+    "address": "2 Nakina Street, Southport QLD 4215",
     "area": "Gold Coast",
-    "type": "Flexible learning centre",
-    "minYear": null,
-    "maxYear": null,
+    "type": "Flexible learning school",
+    "minYear": 7,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
-    "phone": "07 5657 8950",
-    "website": "https://www.erea.edu.au/",
+    "phone": "1800 875 165",
+    "website": "https://southport.flexi.edu.au/",
     "delivery": [
       "In person"
     ],
     "sourcePage": 10,
     "approximate": false,
     "mappable": true,
-    "notes": "Flexible learning centre. PDF does not state a year range for the Southport campus.",
-    "geocodeQuery": "2 Nakina St, Southport QLD",
+    "notes": "Flexible learning school for Years 7–12 with structured English/Maths, project-based learning and VET pathways.",
+    "geocodeQuery": "2 Nakina Street Southport QLD 4215",
     "fallbackQuery": "",
-    "shortName": "Edmund Rice Flexible Learning Centres – Southport Flexible Learning Centre"
+    "shortName": "Edmund Rice Flexible Learning Centres – Southport Flexible Learning Centre",
+    "email": "southport@flexi.edu.au",
+    "features": [
+      "VET",
+      "Career Planning",
+      "Project-based Learning",
+      "Literacy/Numeracy Support",
+      "Re-engagement Support"
+    ],
+    "programs": [
+      "Red group: Years 7–8",
+      "Yellow group: Years 9–10",
+      "Blue group: Years 11–12",
+      "English and Maths",
+      "Project Based Learning",
+      "Careers and Transitions for senior students",
+      "SAS English Communications and Pre-Vocational Maths",
+      "VET, skill sets and micro-credentials through Flexi RTO 46087"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
-    "name": "Edmund Rice Flexible Learning Centres",
-    "campus": "Centre Education Program Kingston",
-    "address": "108 Mudgee St, Kingston QLD",
+    "name": "Centre Education Program",
+    "campus": "Kingston",
+    "address": "108 Mudgee Street, Kingston QLD 4114",
     "area": "Logan",
-    "type": "Flexible learning centre",
+    "type": "Flexible learning school",
     "minYear": 7,
     "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
     "phone": "07 3808 6800",
-    "website": "https://www.erea.edu.au/",
+    "website": "https://cep.flexi.edu.au/",
     "delivery": [
       "In person"
     ],
     "sourcePage": 10,
     "approximate": false,
     "mappable": true,
-    "notes": "Secondary school offering educational pathways for young people in Years 7–12 who have difficulty accessing school.",
-    "geocodeQuery": "108 Mudgee St, Kingston QLD",
+    "notes": "Flexible education program for Years 7–12 incorporating curriculum, wellbeing, literacy/numeracy, digital skills, outdoor learning and VET.",
+    "geocodeQuery": "108 Mudgee Street Kingston QLD 4114",
     "fallbackQuery": "",
-    "shortName": "Edmund Rice Flexible Learning Centres – Centre Education Program Kingston"
+    "shortName": "Edmund Rice Flexible Learning Centres – Centre Education Program Kingston",
+    "email": "cep@flexi.edu.au",
+    "features": [
+      "VET",
+      "Literacy/Numeracy Support",
+      "Outdoor Learning",
+      "Wellbeing",
+      "Digital Skills",
+      "Re-engagement Support"
+    ],
+    "programs": [
+      "Queensland and Australian Curriculum",
+      "Literacy and numeracy",
+      "Skills and training",
+      "Health and wellbeing",
+      "Digital skills",
+      "Community learning",
+      "Outdoor adventure-based learning",
+      "VET, skill sets and micro-credentials through Flexi RTO 46087"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Everything Suarve INC (E-S)",
@@ -836,10 +1665,19 @@ const schools = [
     "sourcePage": 11,
     "approximate": false,
     "mappable": false,
-    "notes": "Not-for-profit early intervention program for young people aged 16–24. No physical location is supplied in the PDF.",
+    "notes": "Not-for-profit early intervention program for young people aged 16–24.",
     "geocodeQuery": "",
     "fallbackQuery": "",
-    "shortName": "Everything Suarve INC (E-S)"
+    "shortName": "Everything Suarve INC (E-S)",
+    "email": "admin@esuarve.com.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Faith Christian School Distance Education",
@@ -863,17 +1701,26 @@ const schools = [
     "notes": "Prep to Year 12; online lessons, camps, workshops, learning support and resources. PDF supplies PO Box 105 Kingston rather than a physical campus address.",
     "geocodeQuery": "",
     "fallbackQuery": "",
-    "shortName": "Faith Christian School Distance Education – Distance Education"
+    "shortName": "Faith Christian School Distance Education – Distance Education",
+    "email": "admin@faith.qld.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Flourish Education",
     "campus": "Tugun",
     "address": "1/1 Kallara St, Tugun QLD",
     "area": "Gold Coast",
-    "type": "Education support service",
+    "type": "Tuition / homeschool support",
     "minYear": null,
     "maxYear": null,
-    "minAge": null,
+    "minAge": 4,
     "maxAge": null,
     "gender": "Not stated",
     "phone": "0434 594 764",
@@ -884,17 +1731,39 @@ const schools = [
     "sourcePage": 12,
     "approximate": false,
     "mappable": true,
-    "notes": "Education and disability support services for young people of all ages; supports home schoolers and flexible enrolment solutions.",
+    "notes": "Professional tuition and homeschool support with individual and small-group options in Tugun, online and via outreach.",
     "geocodeQuery": "1/1 Kallara St, Tugun QLD",
     "fallbackQuery": "",
-    "shortName": "Flourish Education – Tugun"
+    "shortName": "Flourish Education – Tugun",
+    "email": "info@flourisheducation.com.au",
+    "features": [
+      "Homeschool Support",
+      "Tuition",
+      "Online",
+      "Literacy/Numeracy Support",
+      "Social/Emotional Skills",
+      "Small Group"
+    ],
+    "programs": [
+      "Professional Tuition — individual sessions, online or at Tugun, during and after school hours",
+      "In-home/community outreach on the Gold Coast and Northern NSW",
+      "Flourish Foundations — ages 4–8, maximum 4 children, literacy/numeracy/fine motor/social-emotional skills",
+      "Homeschool Group Sessions — small multi-age groups, Monday–Friday 10am–2pm at Tugun",
+      "After School Group Sessions — primary and high school homework, assignments and exam preparation"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Home Education Unit, Education Queensland",
     "campus": "Brisbane",
     "address": "Education House, 30 Mary Street, Brisbane QLD",
     "area": "Brisbane",
-    "type": "Home education support",
+    "type": "Home education information / support",
     "minYear": null,
     "maxYear": null,
     "minAge": null,
@@ -908,10 +1777,52 @@ const schools = [
     "sourcePage": 12,
     "approximate": false,
     "mappable": true,
-    "notes": "Education Queensland Home Education Unit; policy and procedure information for staff.",
+    "notes": "Queensland Government contact point for home education registration, policy and procedural information.",
     "geocodeQuery": "Education House, 30 Mary Street, Brisbane QLD",
     "fallbackQuery": "",
-    "shortName": "Home Education Unit, Education Queensland – Brisbane"
+    "shortName": "Home Education Unit, Education Queensland – Brisbane",
+    "email": "homeeducation@qed.qld.gov.au",
+    "features": [
+      "Homeschool Support",
+      "Official Information"
+    ],
+    "programs": [
+      "Queensland home education registration information",
+      "Educational planning and record-keeping guidance",
+      "Information about home education versus distance education",
+      "Links to optional homeschool curriculum providers"
+    ],
+    "details": [
+      "Home education is different from distance education: distance education is school-supervised and uses a set school curriculum.",
+      "Families may use a purchased homeschool program or develop their own approach, subject to Queensland home education requirements.",
+      "Registration, educational planning and record-keeping requirements should be checked with the Queensland Home Education Unit."
+    ],
+    "resources": [
+      {
+        "label": "Euka Future Learning",
+        "url": "https://euka.edu.au/why-homeschool/"
+      },
+      {
+        "label": "Freedom Homeschooling",
+        "url": "https://freedomhomeschooling.com/"
+      },
+      {
+        "label": "Simply Home School",
+        "url": "https://simplyhomeschool.com.au/"
+      },
+      {
+        "label": "My Home School",
+        "url": "https://myhomeschool.com/"
+      },
+      {
+        "label": "Cluey Learning",
+        "url": "https://clueylearning.com.au/"
+      }
+    ],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Hymba Yumba Independent School",
@@ -932,10 +1843,34 @@ const schools = [
     "sourcePage": 13,
     "approximate": false,
     "mappable": true,
-    "notes": "Co-educational Preparatory to Year 12 program; First Nations school.",
+    "notes": "Prep–Year 12 First Nations school combining cultural learning with academic, QCE, university, TAFE and employment pathways.",
     "geocodeQuery": "6 Springfield Pkwy, Springfield QLD",
     "fallbackQuery": "",
-    "shortName": "Hymba Yumba Independent School – Springfield"
+    "shortName": "Hymba Yumba Independent School – Springfield",
+    "email": "admin@hyis.qld.edu.au",
+    "features": [
+      "First Nations/Cultural Learning",
+      "QCE",
+      "University Pathway",
+      "TAFE Pathway",
+      "Employment Pathway",
+      "Career Planning"
+    ],
+    "programs": [
+      "Years 7–9: English, Mathematics, Science, HASS, Health, PE, Visual Arts, Music, Drama, Dance and traditional Languages",
+      "Year 10: commencement of three-year QCE pathway with continued cultural learning",
+      "Years 11–12: subject/pathway choices toward university, TAFE or workforce",
+      "University of Southern Queensland partnership from Semester 2 of Year 10",
+      "Academic Excellence Pathway: university subjects can contribute 2 QCE points each"
+    ],
+    "details": [
+      "Academic Excellence university pathway eligibility includes an online application and minimum B average."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Indie School",
@@ -959,12 +1894,21 @@ const schools = [
     "notes": "Independent alternative high school for Years 9–12.",
     "geocodeQuery": "75-87 Grand Plaza Drive, Browns Plains QLD",
     "fallbackQuery": "",
-    "shortName": "Indie School – Logan Campus"
+    "shortName": "Indie School – Logan Campus",
+    "email": "enquiries@indieschool.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Indie School",
     "campus": "Ipswich Campus",
-    "address": "Ipswich, QLD — exact street address not provided in PDF",
+    "address": "Ipswich, QLD",
     "area": "Ipswich",
     "type": "Alternative high school",
     "minYear": 9,
@@ -980,15 +1924,24 @@ const schools = [
     "sourcePage": 13,
     "approximate": true,
     "mappable": true,
-    "notes": "PDF states Indie School also has a campus here but does not provide its street address.",
+    "notes": "Indie School campus.",
     "geocodeQuery": "Indie School Ipswich QLD",
     "fallbackQuery": "Ipswich QLD",
-    "shortName": "Indie School – Ipswich Campus"
+    "shortName": "Indie School – Ipswich Campus",
+    "email": "enquiries@indieschool.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Indie School",
     "campus": "Brisbane City Campus",
-    "address": "Brisbane City, QLD — exact street address not provided in PDF",
+    "address": "Brisbane City, QLD",
     "area": "Brisbane",
     "type": "Alternative high school",
     "minYear": 9,
@@ -1004,10 +1957,19 @@ const schools = [
     "sourcePage": 13,
     "approximate": true,
     "mappable": true,
-    "notes": "PDF states Indie School also has a campus here but does not provide its street address.",
+    "notes": "Indie School campus.",
     "geocodeQuery": "Indie School Brisbane City QLD",
     "fallbackQuery": "Brisbane City QLD",
-    "shortName": "Indie School – Brisbane City Campus"
+    "shortName": "Indie School – Brisbane City Campus",
+    "email": "enquiries@indieschool.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Kingston Centre for Continued Secondary Education",
@@ -1031,14 +1993,23 @@ const schools = [
     "notes": "Offers Year 10 Maths/English and Years 11–12 programs; also Kickstart and Bridge options.",
     "geocodeQuery": "62 Bega Road, Kingston QLD 4114",
     "fallbackQuery": "",
-    "shortName": "Kingston Centre for Continued Secondary Education – Kingston"
+    "shortName": "Kingston Centre for Continued Secondary Education – Kingston",
+    "email": "principal@kingstonsc.eq.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "Current status unclear: the listed website does not appear to be working. Please confirm directly before referring a student.",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Mastery Schools Australia",
     "campus": "Coolangatta",
     "address": "Level 1, 72-80 Marine Parade, Coolangatta QLD",
     "area": "Gold Coast",
-    "type": "Alternative/specialist school",
+    "type": "Independent school",
     "minYear": 4,
     "maxYear": 10,
     "minAge": null,
@@ -1052,17 +2023,45 @@ const schools = [
     "sourcePage": 15,
     "approximate": false,
     "mappable": true,
-    "notes": "Caters for Years 4–10; Australian Curriculum; school size capped at 300.",
+    "notes": "Independent Years 4–10 school using explicit instruction and mastery learning with a strong literacy/numeracy focus and additional classroom support.",
     "geocodeQuery": "Level 1, 72-80 Marine Parade, Coolangatta QLD",
     "fallbackQuery": "",
-    "shortName": "Mastery Schools Australia – Coolangatta"
+    "shortName": "Mastery Schools Australia – Coolangatta",
+    "email": "coolangatta@msa.qld.edu.au",
+    "features": [
+      "Independent School",
+      "Literacy/Numeracy Support",
+      "Explicit Instruction",
+      "Learning Difficulties Support",
+      "Wellbeing",
+      "Small Campus",
+      "No Homework"
+    ],
+    "programs": [
+      "Full Australian Curriculum",
+      "Explicit instruction and mastery learning",
+      "Two-hour literacy and numeracy blocks each day",
+      "One classroom teacher plus multiple assistant teachers",
+      "Specialist wrap-around wellbeing support",
+      "Years 7–10: English, Mathematics, Science, HPE, History, Geography, Economics & Business, Civics & Citizenship, The Arts, Technologies and Languages"
+    ],
+    "details": [
+      "Approximately 25–30 students per class.",
+      "Extended school day; no homework is assigned.",
+      "Term levy covers core resources such as books, stationery and excursions."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Mastery Schools Australia",
     "campus": "Southport",
     "address": "105 Scarborough St, Southport QLD",
     "area": "Gold Coast",
-    "type": "Alternative/specialist school",
+    "type": "Independent school",
     "minYear": 4,
     "maxYear": 10,
     "minAge": null,
@@ -1076,17 +2075,45 @@ const schools = [
     "sourcePage": 15,
     "approximate": false,
     "mappable": true,
-    "notes": "Caters for Years 4–10; Australian Curriculum; school size capped at 300.",
+    "notes": "Independent Years 4–10 school using explicit instruction and mastery learning with a strong literacy/numeracy focus and additional classroom support.",
     "geocodeQuery": "105 Scarborough St, Southport QLD",
     "fallbackQuery": "",
-    "shortName": "Mastery Schools Australia – Southport"
+    "shortName": "Mastery Schools Australia – Southport",
+    "email": "southport@msa.qld.edu.au",
+    "features": [
+      "Independent School",
+      "Literacy/Numeracy Support",
+      "Explicit Instruction",
+      "Learning Difficulties Support",
+      "Wellbeing",
+      "Small Campus",
+      "No Homework"
+    ],
+    "programs": [
+      "Full Australian Curriculum",
+      "Explicit instruction and mastery learning",
+      "Two-hour literacy and numeracy blocks each day",
+      "One classroom teacher plus multiple assistant teachers",
+      "Specialist wrap-around wellbeing support",
+      "Years 7–10: English, Mathematics, Science, HPE, History, Geography, Economics & Business, Civics & Citizenship, The Arts, Technologies and Languages"
+    ],
+    "details": [
+      "Approximately 25–30 students per class.",
+      "Extended school day; no homework is assigned.",
+      "Term levy covers core resources such as books, stationery and excursions."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Mastery Schools Australia",
     "campus": "Springfield",
     "address": "37 Sinnathamby Blvd, Springfield Central QLD",
     "area": "Ipswich",
-    "type": "Alternative/specialist school",
+    "type": "Independent school",
     "minYear": 4,
     "maxYear": 10,
     "minAge": null,
@@ -1100,17 +2127,45 @@ const schools = [
     "sourcePage": 15,
     "approximate": false,
     "mappable": true,
-    "notes": "Caters for Years 4–10; Australian Curriculum; school size capped at 300.",
+    "notes": "Independent Years 4–10 school using explicit instruction and mastery learning with a strong literacy/numeracy focus and additional classroom support.",
     "geocodeQuery": "37 Sinnathamby Blvd, Springfield Central QLD",
     "fallbackQuery": "",
-    "shortName": "Mastery Schools Australia – Springfield"
+    "shortName": "Mastery Schools Australia – Springfield",
+    "email": "springfield@msa.qld.edu.au",
+    "features": [
+      "Independent School",
+      "Literacy/Numeracy Support",
+      "Explicit Instruction",
+      "Learning Difficulties Support",
+      "Wellbeing",
+      "Small Campus",
+      "No Homework"
+    ],
+    "programs": [
+      "Full Australian Curriculum",
+      "Explicit instruction and mastery learning",
+      "Two-hour literacy and numeracy blocks each day",
+      "One classroom teacher plus multiple assistant teachers",
+      "Specialist wrap-around wellbeing support",
+      "Years 7–10: English, Mathematics, Science, HPE, History, Geography, Economics & Business, Civics & Citizenship, The Arts, Technologies and Languages"
+    ],
+    "details": [
+      "Approximately 25–30 students per class.",
+      "Extended school day; no homework is assigned.",
+      "Term levy covers core resources such as books, stationery and excursions."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Mastery Schools Australia",
     "campus": "Varsity Lakes",
     "address": "15 Lake St, Varsity Lakes QLD",
     "area": "Gold Coast",
-    "type": "Alternative/specialist school",
+    "type": "Independent school",
     "minYear": 4,
     "maxYear": 10,
     "minAge": null,
@@ -1124,17 +2179,45 @@ const schools = [
     "sourcePage": 15,
     "approximate": false,
     "mappable": true,
-    "notes": "Caters for Years 4–10; Australian Curriculum; school size capped at 300.",
+    "notes": "Independent Years 4–10 school using explicit instruction and mastery learning with a strong literacy/numeracy focus and additional classroom support.",
     "geocodeQuery": "15 Lake St, Varsity Lakes QLD",
     "fallbackQuery": "",
-    "shortName": "Mastery Schools Australia – Varsity Lakes"
+    "shortName": "Mastery Schools Australia – Varsity Lakes",
+    "email": "varsity@msa.qld.edu.au",
+    "features": [
+      "Independent School",
+      "Literacy/Numeracy Support",
+      "Explicit Instruction",
+      "Learning Difficulties Support",
+      "Wellbeing",
+      "Small Campus",
+      "No Homework"
+    ],
+    "programs": [
+      "Full Australian Curriculum",
+      "Explicit instruction and mastery learning",
+      "Two-hour literacy and numeracy blocks each day",
+      "One classroom teacher plus multiple assistant teachers",
+      "Specialist wrap-around wellbeing support",
+      "Years 7–10: English, Mathematics, Science, HPE, History, Geography, Economics & Business, Civics & Citizenship, The Arts, Technologies and Languages"
+    ],
+    "details": [
+      "Approximately 25–30 students per class.",
+      "Extended school day; no homework is assigned.",
+      "Term levy covers core resources such as books, stationery and excursions."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Mastery Schools Australia",
     "campus": "West Brisbane",
     "address": "Building 3, Level 2, 53 Prospect Rd, Gaythorne QLD",
     "area": "Brisbane",
-    "type": "Alternative/specialist school",
+    "type": "Independent school",
     "minYear": 4,
     "maxYear": 10,
     "minAge": null,
@@ -1148,10 +2231,38 @@ const schools = [
     "sourcePage": 15,
     "approximate": false,
     "mappable": true,
-    "notes": "Caters for Years 4–10; Australian Curriculum; school size capped at 300.",
+    "notes": "Independent Years 4–10 school using explicit instruction and mastery learning with a strong literacy/numeracy focus and additional classroom support.",
     "geocodeQuery": "Building 3, Level 2, 53 Prospect Rd, Gaythorne QLD",
     "fallbackQuery": "",
-    "shortName": "Mastery Schools Australia – West Brisbane"
+    "shortName": "Mastery Schools Australia – West Brisbane",
+    "email": "",
+    "features": [
+      "Independent School",
+      "Literacy/Numeracy Support",
+      "Explicit Instruction",
+      "Learning Difficulties Support",
+      "Wellbeing",
+      "Small Campus",
+      "No Homework"
+    ],
+    "programs": [
+      "Full Australian Curriculum",
+      "Explicit instruction and mastery learning",
+      "Two-hour literacy and numeracy blocks each day",
+      "One classroom teacher plus multiple assistant teachers",
+      "Specialist wrap-around wellbeing support",
+      "Years 7–10: English, Mathematics, Science, HPE, History, Geography, Economics & Business, Civics & Citizenship, The Arts, Technologies and Languages"
+    ],
+    "details": [
+      "Approximately 25–30 students per class.",
+      "Extended school day; no homework is assigned.",
+      "Term levy covers core resources such as books, stationery and excursions."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Men of Business (MOB) Academy",
@@ -1175,7 +2286,16 @@ const schools = [
     "notes": "Alternative high school support for young men; PDF does not state year levels.",
     "geocodeQuery": "5 Nerang St, Southport QLD",
     "fallbackQuery": "",
-    "shortName": "Men of Business (MOB) Academy – Southport"
+    "shortName": "Men of Business (MOB) Academy – Southport",
+    "email": "enrolments@menofbusiness.com.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Ohana College",
@@ -1183,8 +2303,8 @@ const schools = [
     "address": "Building L15, Griffith University, Facilities Lane, Meadowbrook QLD",
     "area": "Logan",
     "type": "Special Assistance School",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 7,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Co-educational",
@@ -1196,10 +2316,35 @@ const schools = [
     "sourcePage": 16,
     "approximate": false,
     "mappable": true,
-    "notes": "Co-educational special assistance secondary school aligned to Australian Curriculum; sister school to Arcadia.",
+    "notes": "Years 7–12 co-educational Special Assistance School with smaller classes, targeted literacy/numeracy support, hands-on learning and individual senior pathways.",
     "geocodeQuery": "Building L15, Griffith University, Facilities Lane, Meadowbrook QLD",
     "fallbackQuery": "",
-    "shortName": "Ohana College – Meadowbrook"
+    "shortName": "Ohana College – Meadowbrook",
+    "email": "enrolments@ohanacollege.qld.edu.au",
+    "features": [
+      "Special Assistance School",
+      "Literacy/Numeracy Support",
+      "Hands-on Learning",
+      "QCE",
+      "VET",
+      "University Pathway",
+      "Employment Pathway",
+      "Career Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Years 7–9 Australian Curriculum: English, Mathematics, Science, HASS, HPE, Technologies and The Arts",
+      "Hands-on learning",
+      "Targeted literacy and numeracy lessons",
+      "Differentiated assessment and scaffolded lessons",
+      "Senior pathways: Year 10 completion, QCE, further study/university, vocational and employment pathways"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1220,10 +2365,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "C Block Bracken Ridge TAFE, 157 Norris Rd, Bracken Ridge QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Bracken Ridge"
+    "shortName": "Queensland Pathways State College – Bracken Ridge",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1244,10 +2415,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "D Block Bundamba TAFE, Mary and Byrne St, Bundamba QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Bundamba"
+    "shortName": "Queensland Pathways State College – Bundamba",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1268,10 +2465,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "347 Old Cleveland Rd, Coorparoo QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Coorparoo"
+    "shortName": "Queensland Pathways State College – Coorparoo",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1292,10 +2515,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "45 Queen St, Goodna QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Goodna"
+    "shortName": "Queensland Pathways State College – Goodna",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1316,10 +2565,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "109 School Rd, Kallangur QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Moreton Bay"
+    "shortName": "Queensland Pathways State College – Moreton Bay",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1340,10 +2615,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "H Block Mt Gravatt TAFE, 1030 Cavendish Rd, Mount Gravatt QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Mount Gravatt"
+    "shortName": "Queensland Pathways State College – Mount Gravatt",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Queensland Pathways State College",
@@ -1364,10 +2665,36 @@ const schools = [
     "sourcePage": 17,
     "approximate": false,
     "mappable": true,
-    "notes": "Senior transitions program for Years 10–12; students must be at least 15 and face significant barriers accessing mainstream education.",
+    "notes": "Years 10–12 senior transitions program for students aged 15+ facing significant barriers to mainstream education, with individualised curriculum and vocational pathways.",
     "geocodeQuery": "Lot 42, Hursley Rd, Newtown QLD",
     "fallbackQuery": "",
-    "shortName": "Queensland Pathways State College – Toowoomba"
+    "shortName": "Queensland Pathways State College – Toowoomba",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Career Planning",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Individual QPSC Plan co-constructed with student, parent/carer and Learning Pathways Mentor",
+      "Essential English",
+      "Essential Mathematics",
+      "Short Course Literacy",
+      "Short Course Numeracy",
+      "Short Course Career Education",
+      "VET qualifications including Certificate I–III options"
+    ],
+    "details": [
+      "Applied subjects and eligible Short Courses can contribute credit toward the QCE."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Brisbane School of Distance Education",
@@ -1388,58 +2715,19 @@ const schools = [
     "sourcePage": 18,
     "approximate": false,
     "mappable": false,
-    "notes": "Listed by the PDF; no physical address or year range is supplied on this page.",
+    "notes": "Distance education school.",
     "geocodeQuery": "",
     "fallbackQuery": "",
-    "shortName": "Brisbane School of Distance Education"
-  },
-  {
-    "name": "Silkwood School",
-    "campus": "Prep to Year 9 Campus",
-    "address": "Mt Nathan, QLD — exact street address not provided in PDF",
-    "area": "Gold Coast",
-    "type": "Independent school",
-    "minYear": 0,
-    "maxYear": 9,
-    "minAge": null,
-    "maxAge": null,
-    "gender": "Not stated",
-    "phone": "07 5655 0300",
-    "website": "https://www.silkwood.qld.edu.au/",
-    "delivery": [
-      "In person"
-    ],
-    "sourcePage": 19,
-    "approximate": true,
-    "mappable": true,
-    "notes": "Montessori-based independent school. PDF states the Prep–Year 9 campus is at Mt Nathan.",
-    "geocodeQuery": "Silkwood School Mt Nathan QLD",
-    "fallbackQuery": "Mt Nathan QLD",
-    "shortName": "Silkwood School – Prep to Year 9 Campus"
-  },
-  {
-    "name": "Silkwood School",
-    "campus": "Senior School Campus",
-    "address": "Robina, QLD — exact street address not provided in PDF",
-    "area": "Gold Coast",
-    "type": "Independent school",
-    "minYear": 10,
-    "maxYear": 12,
-    "minAge": null,
-    "maxAge": null,
-    "gender": "Not stated",
-    "phone": "07 5655 0300",
-    "website": "https://www.silkwood.qld.edu.au/",
-    "delivery": [
-      "In person"
-    ],
-    "sourcePage": 19,
-    "approximate": true,
-    "mappable": true,
-    "notes": "PDF states the Year 10–12 Senior School campus is located in Robina.",
-    "geocodeQuery": "Silkwood School Senior School Robina QLD",
-    "fallbackQuery": "Robina QLD",
-    "shortName": "Silkwood School – Senior School Campus"
+    "shortName": "Brisbane School of Distance Education",
+    "email": "enquiries@brisbanesde.eq.edu.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Village School – Gold Coast",
@@ -1460,10 +2748,34 @@ const schools = [
     "sourcePage": 19,
     "approximate": false,
     "mappable": true,
-    "notes": "Prep–Year 6, multi-age; place-based learning and Australian Curriculum.",
+    "notes": "Prep–Year 6 progressive blended-learning school using mixed-age classes, inquiry, family collaboration and integrated Australian Curriculum learning.",
     "geocodeQuery": "Level 1, 91 Griffith St, Coolangatta QLD",
     "fallbackQuery": "",
-    "shortName": "The Village School – Gold Coast – Coolangatta"
+    "shortName": "The Village School – Gold Coast – Coolangatta",
+    "email": "",
+    "features": [
+      "Mixed-age Classes",
+      "Individualised Learning",
+      "Family Collaboration",
+      "Inquiry Learning",
+      "Hands-on Learning",
+      "Literacy/Numeracy Support",
+      "Australian Curriculum"
+    ],
+    "programs": [
+      "Mixed-age groupings: Prep; Years 1–2; Years 3–4; Years 5–6",
+      "Whole-school, class-based, age-based and individual learning groupings",
+      "Co-designed curriculum pathways with students and families",
+      "Daily focused English and Numeracy",
+      "Integrated Science, HASS, The Arts and Technologies",
+      "Learning Lens: Discovering Purpose, Deepening Understanding, Applying & Communicating Learning"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Murri School",
@@ -1484,10 +2796,54 @@ const schools = [
     "sourcePage": 20,
     "approximate": false,
     "mappable": true,
-    "notes": "Independent Community School for Prep to Year 12; culture and community are central to its model.",
+    "notes": "Prep–Year 12 Independent Community School with strong cultural/community focus and senior QCE, VET, workplace and further-study pathways.",
     "geocodeQuery": "1277 Beaudesert Rd, Acacia Ridge QLD",
     "fallbackQuery": "",
-    "shortName": "The Murri School – Acacia Ridge"
+    "shortName": "The Murri School – Acacia Ridge",
+    "email": "aiicsinfo@murrischool.qld.edu.au",
+    "features": [
+      "First Nations/Cultural Learning",
+      "QCE",
+      "SET Planning",
+      "VET",
+      "Workplace Learning",
+      "University Pathway"
+    ],
+    "programs": [
+      "QCE pathway",
+      "SET Planning with student, family/carers and school",
+      "Senior subjects",
+      "VET",
+      "Workplace and community learning",
+      "University subjects while at school"
+    ],
+    "details": [],
+    "resources": [
+      {
+        "label": "QCE Brochure",
+        "url": "https://murrischool.qld.edu.au/wp-content/uploads/2025/03/qce_brochure1.pdf"
+      },
+      {
+        "label": "Student Connect",
+        "url": "https://studentconnect.qcaa.qld.edu.au/"
+      },
+      {
+        "label": "QCE Handbook",
+        "url": "https://murrischool.qld.edu.au/wp-content/uploads/2025/03/qce_handbook.pdf"
+      },
+      {
+        "label": "Understanding the QCE",
+        "url": "https://murrischool.qld.edu.au/wp-content/uploads/2025/03/the_qce_ppt_presentation.ppt"
+      },
+      {
+        "label": "Employer perspectives on the QCE",
+        "url": "https://murrischool.qld.edu.au/wp-content/uploads/2025/03/qce_perspective_brochure.pdf"
+      }
+    ],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1495,8 +2851,8 @@ const schools = [
     "address": "88 Leichhardt St, Spring Hill QLD",
     "area": "Brisbane",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1508,10 +2864,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "88 Leichhardt St, Spring Hill QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Brisbane"
+    "shortName": "The Industry School – Brisbane",
+    "email": "brisbane@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 9985,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1519,8 +2935,8 @@ const schools = [
     "address": "281 Scottsdale Drive, Robina QLD",
     "area": "Gold Coast",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1532,10 +2948,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "281 Scottsdale Drive, Robina QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Gold Coast"
+    "shortName": "The Industry School – Gold Coast",
+    "email": "gcenrolments@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 9680,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1543,8 +3019,8 @@ const schools = [
     "address": "17 Lowry St, North Ipswich QLD",
     "area": "Ipswich",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1556,10 +3032,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "17 Lowry St, North Ipswich QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Ipswich"
+    "shortName": "The Industry School – Ipswich",
+    "email": "ipsenrolments@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 8195,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1567,8 +3103,8 @@ const schools = [
     "address": "233 Middle St, Cleveland QLD",
     "area": "Redlands",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1580,10 +3116,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "233 Middle St, Cleveland QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Redlands"
+    "shortName": "The Industry School – Redlands",
+    "email": "redlands@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 9680,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1591,8 +3187,8 @@ const schools = [
     "address": "1-3 Russell St, Toowoomba QLD",
     "area": "Toowoomba",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1604,10 +3200,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "1-3 Russell St, Toowoomba QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Toowoomba"
+    "shortName": "The Industry School – Toowoomba",
+    "email": "toowoomba@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 8125,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "The Industry School",
@@ -1615,8 +3271,8 @@ const schools = [
     "address": "170 Horton Parade, Maroochydore QLD",
     "area": "Sunshine Coast",
     "type": "Industry/vocational school",
-    "minYear": null,
-    "maxYear": null,
+    "minYear": 10,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
@@ -1628,10 +3284,70 @@ const schools = [
     "sourcePage": 21,
     "approximate": false,
     "mappable": true,
-    "notes": "The PDF provides campus locations and contact details but does not state year levels on this page.",
+    "notes": "Years 10–12 industry-focused school where students alternate five-week classroom and industry blocks, combining senior education, VET and workplace learning.",
     "geocodeQuery": "170 Horton Parade, Maroochydore QLD",
     "fallbackQuery": "",
-    "shortName": "The Industry School – Sunshine Coast"
+    "shortName": "The Industry School – Sunshine Coast",
+    "email": "sunshinecoast@theindustryschool.com.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Work Experience",
+      "Apprenticeships/Traineeships",
+      "Employment Pathway",
+      "Industry Placement",
+      "Small Classes",
+      "Wellbeing"
+    ],
+    "programs": [
+      "Five weeks classroom + five weeks industry each term",
+      "More than 20 weeks per year in industry placement/training/apprenticeship/traineeship",
+      "QCE pathway",
+      "VET",
+      "Work experience and work placement",
+      "School-based apprenticeship or traineeship",
+      "Industry guidance and coaching"
+    ],
+    "details": [
+      "Core subject classes up to 25 students.",
+      "Values: Respect, Pride, Courage, Honesty, Mateship, Hard Work and Safety.",
+      "BYOD school.",
+      "Trade Support Loan information: Australian Government loan support may be available for eligible apprentices; current eligibility and repayment information should be checked with Australian Apprenticeships."
+    ],
+    "resources": [
+      {
+        "label": "Australian Apprenticeships incentives / Trade Support Loan information",
+        "url": "https://www.australianapprenticeships.gov.au/aus-apprenticeships-incentives"
+      },
+      {
+        "label": "Fee payment options",
+        "url": "https://theindustryschool.com.au/wp-content/uploads/The-Industry-School-Payment-Options-Updated-2026.pdf"
+      }
+    ],
+    "fees": {
+      "year": 2026,
+      "annualTuition": 8850,
+      "applicationFee": 120,
+      "confirmationFee": 550,
+      "includes": [
+        "Textbooks",
+        "Subscriptions",
+        "Student accident insurance",
+        "Industry guidance/coaching",
+        "VET courses during Education Block",
+        "Industry education program"
+      ],
+      "excludes": [
+        "Laptop/BYOD",
+        "Travel",
+        "Uniform",
+        "Personal safety equipment",
+        "Some excursions/events and optional activities"
+      ]
+    },
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
     "name": "Toogoolawa School",
@@ -1655,54 +3371,461 @@ const schools = [
     "notes": "For boys Years 3–10; class ratio 1:7; Australian Curriculum; character, social skills and self-esteem focus.",
     "geocodeQuery": "138 Reedmans Rd, Ormeau QLD",
     "fallbackQuery": "",
-    "shortName": "Toogoolawa School – Ormeau"
+    "shortName": "Toogoolawa School – Ormeau",
+    "email": "office@toogoolawa.com.au",
+    "features": [],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   },
   {
-    "name": "The Y / YMCA Vocational School",
+    "name": "Y Schools Queensland",
     "campus": "Logan Junior Campus",
     "address": "53 Mary St, Kingston QLD",
     "area": "Logan",
-    "type": "Vocational / alternative school",
-    "minYear": null,
-    "maxYear": null,
+    "type": "Alternative secondary school",
+    "minYear": 7,
+    "maxYear": 12,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
     "phone": "07 3440 4322",
-    "website": "https://ymcaqueensland.org.au/services/vocational-school",
+    "website": "https://yschools.qld.edu.au/",
     "delivery": [
       "In person"
     ],
     "sourcePage": 22,
     "approximate": false,
     "mappable": true,
-    "notes": "Provides adjusted education programs and vocational training to secondary students. PDF notes several other campuses but does not list them here.",
+    "notes": "Years 7–12 alternative secondary school for students who may find mainstream schooling challenging. All enrolments require a referral and prospective students attend an interview.",
     "geocodeQuery": "53 Mary St, Kingston QLD",
     "fallbackQuery": "",
-    "shortName": "The Y / YMCA Vocational School – Logan Junior Campus"
+    "shortName": "The Y / YMCA Vocational School – Logan Junior Campus",
+    "email": "Reception.clemJonesJunior@ymcaqueensland.org.au",
+    "features": [
+      "QCE",
+      "VET",
+      "SET Planning",
+      "Individual Learning Plan",
+      "Referral Required",
+      "Re-engagement Support",
+      "Career Planning",
+      "Literacy/Numeracy Support"
+    ],
+    "programs": [
+      "Years 7–9 Middle School Suite: English, Mathematics, Science, History, Civics & Citizenship, HPE, Visual Art, Technologies, Body Mind Spirit, VET Pathways and electives",
+      "SET Plan and Individual Learning Plan from Year 10",
+      "Essential Skills Suite: Essential English, Essential Mathematics, Social & Community Studies and Certificate II/III options",
+      "Foundation Vocation Suite: Literacy, Numeracy and Certificate II/III pathways",
+      "Further education support after Year 12"
+    ],
+    "details": [],
+    "resources": [
+      {
+        "label": "Junior and Senior Subject Suites",
+        "url": "https://yschools.qld.edu.au/teaching-and-learning/subjects/"
+      }
+    ],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": true
   },
   {
-    "name": "The Y / YMCA Vocational School",
+    "name": "Y Schools Queensland",
     "campus": "Logan Senior Campus",
     "address": "41-45 Mary St, Kingston QLD",
     "area": "Logan",
-    "type": "Vocational / alternative school",
+    "type": "Alternative secondary school",
+    "minYear": 7,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 3440 4300",
+    "website": "https://yschools.qld.edu.au/",
+    "delivery": [
+      "In person"
+    ],
+    "sourcePage": 22,
+    "approximate": false,
+    "mappable": true,
+    "notes": "Years 7–12 alternative secondary school for students who may find mainstream schooling challenging. All enrolments require a referral and prospective students attend an interview.",
+    "geocodeQuery": "41-45 Mary St, Kingston QLD",
+    "fallbackQuery": "",
+    "shortName": "The Y / YMCA Vocational School – Logan Senior Campus",
+    "email": "Reception.ClemJones@ymcaqueensland.org.au",
+    "features": [
+      "QCE",
+      "VET",
+      "SET Planning",
+      "Individual Learning Plan",
+      "Referral Required",
+      "Re-engagement Support",
+      "Career Planning",
+      "Literacy/Numeracy Support"
+    ],
+    "programs": [
+      "Years 7–9 Middle School Suite: English, Mathematics, Science, History, Civics & Citizenship, HPE, Visual Art, Technologies, Body Mind Spirit, VET Pathways and electives",
+      "SET Plan and Individual Learning Plan from Year 10",
+      "Essential Skills Suite: Essential English, Essential Mathematics, Social & Community Studies and Certificate II/III options",
+      "Foundation Vocation Suite: Literacy, Numeracy and Certificate II/III pathways",
+      "Further education support after Year 12"
+    ],
+    "details": [],
+    "resources": [
+      {
+        "label": "Junior and Senior Subject Suites",
+        "url": "https://yschools.qld.edu.au/teaching-and-learning/subjects/"
+      }
+    ],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": true
+  },
+  {
+    "name": "Arcadia College",
+    "campus": "Distance Education",
+    "address": "",
+    "area": "Queensland-wide",
+    "type": "Special Assistance School",
+    "minYear": 8,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Co-educational",
+    "phone": "07 5655 1800",
+    "website": "https://arcadia.qld.edu.au",
+    "delivery": [
+      "Distance education",
+      "Online"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": false,
+    "notes": "Years 8–12 online special assistance pathway for students who may be disengaged from mainstream schooling or need a more personalised approach. Not an ATAR school.",
+    "geocodeQuery": "",
+    "fallbackQuery": "",
+    "shortName": "Arcadia College – Distance Education",
+    "email": "enrolments@arcadia.qld.edu.au",
+    "features": [
+      "QCE",
+      "VET",
+      "Online",
+      "Live Classes",
+      "Psychologist Support",
+      "Career Planning",
+      "Individualised Learning"
+    ],
+    "programs": [
+      "Live real-time teacher-led classes",
+      "Teacher and Teacher Aide support during each lesson",
+      "Structured timetable: 8:45am–2:00pm",
+      "Years 8–10 taught in 5-week blocks",
+      "Apple MacBook or iPad provided on enrolment",
+      "Psychologists, student engagement officers and on-call IT support",
+      "QCE and VET pathways",
+      "Employment, traineeship, apprenticeship, TAFE and further-study pathways"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "The BUSY School",
+    "campus": "Online",
+    "address": "",
+    "area": "Queensland-wide",
+    "type": "Special Assistance School",
+    "minYear": 11,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "1300 176 472",
+    "website": "https://www.busyschools.qld.edu.au/",
+    "delivery": [
+      "Online",
+      "Distance education"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": false,
+    "notes": "Flexible online Years 11–12 Special Assistance School program with live classes, personalised support and senior pathway planning.",
+    "geocodeQuery": "",
+    "fallbackQuery": "",
+    "shortName": "The BUSY School – Online",
+    "email": "admin@busyschools.com.au",
+    "features": [
+      "QCE",
+      "QCIA",
+      "VET",
+      "Online",
+      "Live Classes",
+      "Youth Worker Support",
+      "Career Planning",
+      "SET Planning"
+    ],
+    "programs": [
+      "Live online learning",
+      "Flexible scheduling",
+      "One-to-one support from a dedicated teacher and Youth Worker",
+      "Essential English, Essential Mathematics and Social & Community Studies",
+      "VET electives",
+      "SET Plan and Individual Learning Plan",
+      "QCE or QCIA pathways"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Albert Park Flexible Learning Centre",
+    "campus": "Brisbane City",
+    "address": "1 Hale Street, Brisbane QLD 4000",
+    "area": "Brisbane",
+    "type": "Flexible learning school",
+    "minYear": 7,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 3071 9010 / 1800 844 075",
+    "website": "https://albertpark.flexi.edu.au/",
+    "delivery": [
+      "In person"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": true,
+    "notes": "Flexible learning school for Years 7–12.",
+    "geocodeQuery": "1 Hale Street Brisbane QLD 4000",
+    "fallbackQuery": "",
+    "shortName": "Albert Park Flexible Learning Centre – Brisbane City",
+    "email": "albertpark@flexi.edu.au",
+    "features": [
+      "Re-engagement Support"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Queensland Pathways State College",
+    "campus": "Online",
+    "address": "",
+    "area": "Queensland-wide",
+    "type": "State school / online VET",
+    "minYear": 10,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 3421 0666",
+    "website": "https://qpsc.eq.edu.au/",
+    "delivery": [
+      "Online"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": false,
+    "notes": "Fully online flexible VET offering for Years 10–12, including metropolitan, rural and remote settings.",
+    "geocodeQuery": "",
+    "fallbackQuery": "",
+    "shortName": "Queensland Pathways State College – Online",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "Online",
+      "VET",
+      "Literacy/Numeracy Support",
+      "Employment Pathway",
+      "Apprenticeships/Traineeships"
+    ],
+    "programs": [
+      "Certificate II qualifications delivered online",
+      "Foundational literacy, numeracy, digital and workplace skills",
+      "Employment, apprenticeship and further-training pathways",
+      "One-semester course duration",
+      "Two trainer-led online lessons per week",
+      "Supervising teacher at student's school",
+      "Classes limited to 18 students"
+    ],
+    "details": [
+      "$25 administration fee paid by the school, not the student."
+    ],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Queensland Pathways State College",
+    "campus": "Outreach",
+    "address": "",
+    "area": "Queensland-wide",
+    "type": "School partnership / outreach",
     "minYear": null,
     "maxYear": null,
     "minAge": null,
     "maxAge": null,
     "gender": "Not stated",
-    "phone": "07 3440 4300",
-    "website": "https://ymcaqueensland.org.au/services/vocational-school",
+    "phone": "07 3421 0666",
+    "website": "https://qpsc.eq.edu.au/",
+    "delivery": [
+      "Outreach"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": false,
+    "notes": "Partner-school outreach model supporting appropriately accredited school staff to deliver QPSC certificate courses under the QPSC RTO.",
+    "geocodeQuery": "",
+    "fallbackQuery": "",
+    "shortName": "Queensland Pathways State College – Outreach",
+    "email": "Admin@qpsc.eq.edu.au",
+    "features": [
+      "VET",
+      "School Partnership"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Silkwood School",
+    "campus": "Primary School Campus",
+    "address": "Mt Nathan, QLD",
+    "area": "Gold Coast",
+    "type": "Independent school",
+    "minYear": 0,
+    "maxYear": 5,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 5655 0300",
+    "website": "https://www.silkwood.qld.edu.au/",
     "delivery": [
       "In person"
     ],
-    "sourcePage": 22,
+    "sourcePage": null,
+    "approximate": true,
+    "mappable": true,
+    "notes": "Prep–Year 5 campus in a Gold Coast Hinterland bush setting with purpose-built indoor/outdoor learning spaces.",
+    "geocodeQuery": "Silkwood School Mt Nathan QLD",
+    "fallbackQuery": "Mt Nathan QLD",
+    "shortName": "Silkwood School – Primary School Campus",
+    "email": "reception@silkwood.qld.edu.au",
+    "features": [
+      "Independent School",
+      "Outdoor Learning",
+      "Individualised Learning"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Silkwood School",
+    "campus": "Middle School Campus",
+    "address": "8 Cladiara Road, Mt Nathan QLD 4211",
+    "area": "Gold Coast",
+    "type": "Independent school",
+    "minYear": 6,
+    "maxYear": 9,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 5655 0300",
+    "website": "https://www.silkwood.qld.edu.au/",
+    "delivery": [
+      "In person"
+    ],
+    "sourcePage": null,
     "approximate": false,
     "mappable": true,
-    "notes": "Provides adjusted education programs and vocational training to secondary students. PDF notes several other campuses but does not list them here.",
-    "geocodeQuery": "41-45 Mary St, Kingston QLD",
+    "notes": "Years 6–9 campus with age-appropriate middle-school learning spaces.",
+    "geocodeQuery": "8 Cladiara Road Mt Nathan QLD 4211",
     "fallbackQuery": "",
-    "shortName": "The Y / YMCA Vocational School – Logan Senior Campus"
+    "shortName": "Silkwood School – Middle School Campus",
+    "email": "reception@silkwood.qld.edu.au",
+    "features": [
+      "Independent School"
+    ],
+    "programs": [],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
+  },
+  {
+    "name": "Silkwood School",
+    "campus": "Senior School Campus",
+    "address": "36 Laver Drive, Robina QLD 4226",
+    "area": "Gold Coast",
+    "type": "Independent school",
+    "minYear": 10,
+    "maxYear": 12,
+    "minAge": null,
+    "maxAge": null,
+    "gender": "Not stated",
+    "phone": "07 5655 0300",
+    "website": "https://www.silkwood.qld.edu.au/",
+    "delivery": [
+      "In person"
+    ],
+    "sourcePage": null,
+    "approximate": false,
+    "mappable": true,
+    "notes": "Years 10–12 dedicated senior campus focused on interests, passions and post-school pathways.",
+    "geocodeQuery": "36 Laver Drive Robina QLD 4226",
+    "fallbackQuery": "",
+    "shortName": "Silkwood School – Senior School Campus",
+    "email": "reception@silkwood.qld.edu.au",
+    "features": [
+      "Independent School",
+      "TAFE Pathway",
+      "University Pathway",
+      "Internships",
+      "Mentoring",
+      "Career Planning"
+    ],
+    "programs": [
+      "Mentoring",
+      "Internships",
+      "TAFE taster courses",
+      "University taster courses",
+      "Post-school pathway exploration"
+    ],
+    "details": [],
+    "resources": [],
+    "fees": null,
+    "warning": "",
+    "ageRanges": [],
+    "referralRequired": false
   }
 ];
